@@ -1,0 +1,5 @@
+E:\code\Gas_test2\Publish\Gas_test2.BLL.Contracts.dll
+E:\code\Gas_test2\Publish\Gas_test2.BLL.Contracts.pdb
+E:\code\Gas_test2\Code\Gas_test2.BLL.Contracts\obj\Debug\Gas_test2.BLL.Contracts.csprojResolveAssemblyReference.cache
+E:\code\Gas_test2\Code\Gas_test2.BLL.Contracts\obj\Debug\Gas_test2.BLL.Contracts.dll
+E:\code\Gas_test2\Code\Gas_test2.BLL.Contracts\obj\Debug\Gas_test2.BLL.Contracts.pdb

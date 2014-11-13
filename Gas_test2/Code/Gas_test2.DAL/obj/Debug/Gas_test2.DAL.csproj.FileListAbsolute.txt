@@ -1,0 +1,5 @@
+E:\code\Gas_test2\Publish\Gas_test2.DAL.dll
+E:\code\Gas_test2\Publish\Gas_test2.DAL.pdb
+E:\code\Gas_test2\Code\Gas_test2.DAL\obj\Debug\Gas_test2.DAL.csprojResolveAssemblyReference.cache
+E:\code\Gas_test2\Code\Gas_test2.DAL\obj\Debug\Gas_test2.DAL.dll
+E:\code\Gas_test2\Code\Gas_test2.DAL\obj\Debug\Gas_test2.DAL.pdb

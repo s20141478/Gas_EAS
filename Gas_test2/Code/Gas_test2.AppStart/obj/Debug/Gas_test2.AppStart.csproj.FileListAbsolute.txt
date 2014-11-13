@@ -1,0 +1,8 @@
+E:\code\Gas_test2\Publish\Gas_test2.AppStart.exe.config
+E:\code\Gas_test2\Publish\Gas_test2.AppStart.exe
+E:\code\Gas_test2\Publish\Gas_test2.AppStart.pdb
+E:\code\Gas_test2\Code\Gas_test2.AppStart\obj\Debug\Gas_test2.AppStart.csprojResolveAssemblyReference.cache
+E:\code\Gas_test2\Code\Gas_test2.AppStart\obj\Debug\Gas_test2.AppStart.Properties.Resources.resources
+E:\code\Gas_test2\Code\Gas_test2.AppStart\obj\Debug\Gas_test2.AppStart.csproj.GenerateResource.Cache
+E:\code\Gas_test2\Code\Gas_test2.AppStart\obj\Debug\Gas_test2.AppStart.exe
+E:\code\Gas_test2\Code\Gas_test2.AppStart\obj\Debug\Gas_test2.AppStart.pdb

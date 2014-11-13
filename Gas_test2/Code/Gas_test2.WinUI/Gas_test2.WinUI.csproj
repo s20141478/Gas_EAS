@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B568E661-E285-4D29-A7FE-2D862CAD01B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gas_test2.WinUI</RootNamespace>
+    <AssemblyName>Gas_test2.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EAS.Data, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Data.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Data.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Explorer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Explorer.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Explorer.Entities, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Explorer.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.GReport.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.GReport.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.MicroKernel, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Report.Controls, Version=3.2.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Report.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\EAS.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publish\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtrlView\Forecast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\Forecast.Designer.cs">
+      <DependentUpon>Forecast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\Query.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipConfig.Designer.cs">
+      <DependentUpon>EquipConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileConfig.Designer.cs">
+      <DependentUpon>FileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\AddAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\AddAlgorithm.Designer.cs">
+      <DependentUpon>AddAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\AddEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\AddEquip.Designer.cs">
+      <DependentUpon>AddEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\ClearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\ClearData.Designer.cs">
+      <DependentUpon>ClearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\ErrShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\ErrShow.Designer.cs">
+      <DependentUpon>ErrShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\HaveBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\HaveBack.Designer.cs">
+      <DependentUpon>HaveBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoew\SetFCSTPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoew\SetFCSTPara.Designer.cs">
+      <DependentUpon>SetFCSTPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleClass\FuncClass.cs" />
+    <Compile Include="Navigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation.Designer.cs">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetAlgorithm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetAlgorithm.Designer.cs">
+      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Gas_test2.Entities.csproj">
+      <Project>{cf45865e-abe4-449c-ace2-0be90db1851c}</Project>
+      <Name>Gas_test2.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gas_test2.BLL.Contracts\Gas_test2.BLL.Contracts.csproj">
+      <Project>{7de5b3e3-36fd-4a92-b388-698fd7bc0bff}</Project>
+      <Name>Gas_test2.BLL.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtrlView\Forecast.resx">
+      <DependentUpon>Forecast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipConfig.resx">
+      <DependentUpon>EquipConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileConfig.resx">
+      <DependentUpon>FileConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoew\AddAlgorithm.resx">
+      <DependentUpon>AddAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoew\AddEquip.resx">
+      <DependentUpon>AddEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoew\ErrShow.resx">
+      <DependentUpon>ErrShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoew\HaveBack.resx">
+      <DependentUpon>HaveBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation.resx">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetAlgorithm.resx">
+      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

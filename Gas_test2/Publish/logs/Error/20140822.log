@@ -1,0 +1,288 @@
+[类型]:Error
+[线程]:1
+[内存]:42.21M
+[时间]:2014-08-22 10:33:57
+[内容]:对象的当前状态使该操作无效。
+[来源]:System.Windows.Forms
+[目标]:Void ProcessListChanged(System.ComponentModel.ListChangedEventArgs)
+[堆栈]:   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.ProcessListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.currencyManager_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.List_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.Add(Object value)
+   在 System.Windows.Forms.BindingSource.AddNew()
+   在 System.Windows.Forms.CurrencyManager.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.OnNewRowNeeded()
+   在 System.Windows.Forms.DataGridView.OnRowEnter(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, Boolean canCreateNewRow, Boolean validationFailureOccurred)
+   在 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.DHKxKHwl0JOTXOmJDx6(Object , Object )
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.OnMouseDown(MouseEventArgs )
+   在 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:1
+[内存]:43.03M
+[时间]:2014-08-22 10:34:04
+[内容]:“3”的值对于“indexStart”无效。“indexStart”必须小于或等于 2。
+参数名: indexStart
+[来源]:System.Windows.Forms
+[目标]:Int32 GetPreviousRow(Int32, System.Windows.Forms.DataGridViewElementStates)
+[堆栈]:   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter)
+   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter, DataGridViewElementStates excludeFilter)
+   在 System.Windows.Forms.DataGridView.CorrectRowFrozenState(DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Int32 anticipatedRowIndex)
+   在 System.Windows.Forms.DataGridView.OnInsertingRow(Int32 rowIndexInserted, DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Point& newCurrentCell, Boolean firstInsertion, Int32 insertionCount, Boolean force)
+   在 System.Windows.Forms.DataGridViewRowCollection.InsertInternal(Int32 rowIndex, DataGridViewRow dataGridViewRow, Boolean force)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.ProcessListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.currencyManager_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.List_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.Add(Object value)
+   在 System.Windows.Forms.BindingSource.AddNew()
+   在 System.Windows.Forms.CurrencyManager.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.OnNewRowNeeded()
+   在 System.Windows.Forms.DataGridView.OnRowEnter(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, Boolean canCreateNewRow, Boolean validationFailureOccurred)
+   在 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.DHKxKHwl0JOTXOmJDx6(Object , Object )
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.OnMouseDown(MouseEventArgs )
+   在 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:1
+[内存]:41.67M
+[时间]:2014-08-22 10:34:17
+[内容]:“4”的值对于“indexStart”无效。“indexStart”必须小于或等于 2。
+参数名: indexStart
+[来源]:System.Windows.Forms
+[目标]:Int32 GetPreviousRow(Int32, System.Windows.Forms.DataGridViewElementStates)
+[堆栈]:   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter)
+   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter, DataGridViewElementStates excludeFilter)
+   在 System.Windows.Forms.DataGridView.CorrectRowFrozenState(DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Int32 anticipatedRowIndex)
+   在 System.Windows.Forms.DataGridView.OnInsertingRow(Int32 rowIndexInserted, DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Point& newCurrentCell, Boolean firstInsertion, Int32 insertionCount, Boolean force)
+   在 System.Windows.Forms.DataGridViewRowCollection.InsertInternal(Int32 rowIndex, DataGridViewRow dataGridViewRow, Boolean force)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.ProcessListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.currencyManager_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.List_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.Add(Object value)
+   在 System.Windows.Forms.BindingSource.AddNew()
+   在 System.Windows.Forms.CurrencyManager.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.OnNewRowNeeded()
+   在 System.Windows.Forms.DataGridView.OnRowEnter(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, Boolean canCreateNewRow, Boolean validationFailureOccurred)
+   在 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.DHKxKHwl0JOTXOmJDx6(Object , Object )
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.OnMouseDown(MouseEventArgs )
+   在 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:1
+[内存]:41.24M
+[时间]:2014-08-22 10:34:23
+[内容]:“5”的值对于“indexStart”无效。“indexStart”必须小于或等于 2。
+参数名: indexStart
+[来源]:System.Windows.Forms
+[目标]:Int32 GetPreviousRow(Int32, System.Windows.Forms.DataGridViewElementStates)
+[堆栈]:   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter)
+   在 System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(Int32 indexStart, DataGridViewElementStates includeFilter, DataGridViewElementStates excludeFilter)
+   在 System.Windows.Forms.DataGridView.CorrectRowFrozenState(DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Int32 anticipatedRowIndex)
+   在 System.Windows.Forms.DataGridView.OnInsertingRow(Int32 rowIndexInserted, DataGridViewRow dataGridViewRow, DataGridViewElementStates rowState, Point& newCurrentCell, Boolean firstInsertion, Int32 insertionCount, Boolean force)
+   在 System.Windows.Forms.DataGridViewRowCollection.InsertInternal(Int32 rowIndex, DataGridViewRow dataGridViewRow, Boolean force)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.ProcessListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.currencyManager_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.CurrencyManager.List_ListChanged(Object sender, ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.OnListChanged(ListChangedEventArgs e)
+   在 System.Windows.Forms.BindingSource.Add(Object value)
+   在 System.Windows.Forms.BindingSource.AddNew()
+   在 System.Windows.Forms.CurrencyManager.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.AddNew()
+   在 System.Windows.Forms.DataGridView.DataGridViewDataConnection.OnNewRowNeeded()
+   在 System.Windows.Forms.DataGridView.OnRowEnter(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, Boolean canCreateNewRow, Boolean validationFailureOccurred)
+   在 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   在 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.DHKxKHwl0JOTXOmJDx6(Object , Object )
+   在 pVlBDW2LTE5ZInoXyH.koUD2q0aeWT33MSOdM.OnMouseDown(MouseEventArgs )
+   在 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:1
+[内存]:13.57M
+[时间]:2014-08-22 13:49:41
+[内容]:未将对象引用设置到对象的实例。
+[来源]:EAS.FormDesigner
+[目标]:System.String GenerateCodeBehand()
+[堆栈]:   在 EAS.Design.CodeDOM.WinFromGenerator.GenerateCodeBehand()
+   在 Q7MCY74qn5Vdc4Nbrb.aICthITJ1tYcq9kgNt.g7lEljbC1mKubjlWcDR(Object )
+   在 Q7MCY74qn5Vdc4Nbrb.aICthITJ1tYcq9kgNt.TeqrJSfxBf()
+   在 EAS.Design.TabPageXmlDesigner.CeWljr4xcj(Object , EventArgs )
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:1
+[内存]:14.11M
+[时间]:2014-08-22 13:50:05
+[内容]:未将对象引用设置到对象的实例。
+[来源]:System
+[目标]:Void SetValue(System.Object, System.Object)
+[堆栈]:   在 System.ComponentModel.ReflectPropertyDescriptor.SetValue(Object component, Object value)
+   在 System.Windows.Forms.RadioButton.PerformAutoUpdates(Boolean tabbedInto)
+   在 System.Windows.Forms.RadioButton.set_Checked(Boolean value)
+   在 System.Windows.Forms.RadioButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.RadioButton.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+[类型]:Error
+[线程]:6
+[内存]:11.13M
+[时间]:2014-08-22 13:54:09
+[内容]:用户 'sa' 登录失败。
+[来源]:.Net SqlClient Data Provider
+[目标]:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+[堆栈]:   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 dogwI66Qd1OlWMWcY2.MUXKYBQ7bOrtftJQms.GmewnWZ79(String )
+
+
+[类型]:Error
+[线程]:8
+[内存]:10.19M
+[时间]:2014-08-22 13:54:11
+[内容]:用户 'sa' 登录失败。
+[来源]:.Net SqlClient Data Provider
+[目标]:Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)
+[堆栈]:   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 dogwI66Qd1OlWMWcY2.MUXKYBQ7bOrtftJQms.GmewnWZ79(String )
+
+
+[类型]:Error
+[线程]:9
+[内存]:10.36M
+[时间]:2014-08-22 13:54:14
+[内容]:用户 'sa' 登录失败。
+[来源]:.Net SqlClient Data Provider
+[目标]:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+[堆栈]:   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 dogwI66Qd1OlWMWcY2.MUXKYBQ7bOrtftJQms.GmewnWZ79(String )
+
+
+[类型]:Error
+[线程]:5
+[内存]:11.03M
+[时间]:2014-08-22 14:01:03
+[内容]:用户 'sa' 登录失败。
+[来源]:.Net SqlClient Data Provider
+[目标]:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+[堆栈]:   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 dogwI66Qd1OlWMWcY2.MUXKYBQ7bOrtftJQms.GmewnWZ79(String )
+
+
