@@ -89,6 +89,7 @@
             this.btn_Right.TabIndex = 8;
             this.btn_Right.Text = "右移";
             this.btn_Right.UseVisualStyleBackColor = true;
+            this.btn_Right.Click += new System.EventHandler(this.btn_Right_Click);
             // 
             // btn_Left
             // 
@@ -98,6 +99,7 @@
             this.btn_Left.TabIndex = 7;
             this.btn_Left.Text = "左移";
             this.btn_Left.UseVisualStyleBackColor = true;
+            this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
             // 
             // lbox_UsedAlg
             // 
@@ -116,6 +118,7 @@
             this.btn_Enter.TabIndex = 5;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
             // SetAlgorithm
             // 
@@ -126,6 +129,7 @@
             this.Controls.Add(this.btn_Enter);
             this.Name = "SetAlgorithm";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.SetAlgorithm_Load);
             this.gbox1.ResumeLayout(false);
             this.gbox2.ResumeLayout(false);
             this.ResumeLayout(false);

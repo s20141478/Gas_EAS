@@ -169,6 +169,7 @@
             this.btn_Query.TabIndex = 2;
             this.btn_Query.Text = "查询";
             this.btn_Query.UseVisualStyleBackColor = true;
+            this.btn_Query.Click += new System.EventHandler(this.btn_Query_Click);
             // 
             // tbCtrl
             // 
@@ -214,7 +215,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(734, 327);
+            this.tabPage2.Size = new System.Drawing.Size(936, 324);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -226,7 +227,7 @@
             this.DG1.Location = new System.Drawing.Point(3, 3);
             this.DG1.Name = "DG1";
             this.DG1.RowTemplate.Height = 23;
-            this.DG1.Size = new System.Drawing.Size(728, 321);
+            this.DG1.Size = new System.Drawing.Size(930, 318);
             this.DG1.TabIndex = 0;
             // 
             // Query
@@ -236,6 +237,7 @@
             this.Controls.Add(this.spCtn);
             this.Name = "Query";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.Query_Load);
             this.spCtn.Panel1.ResumeLayout(false);
             this.spCtn.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spCtn)).EndInit();

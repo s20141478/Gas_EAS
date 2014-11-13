@@ -1,0 +1,7 @@
+E:\code\Gas_test2\Publish\Gas_test2.Main.exe.config
+E:\code\Gas_test2\Publish\Gas_test2.Main.exe
+E:\code\Gas_test2\Publish\Gas_test2.Main.pdb
+E:\code\Gas_test2\Code\Gas_test2.Main\obj\Debug\Gas_test2.Main.Properties.Resources.resources
+E:\code\Gas_test2\Code\Gas_test2.Main\obj\Debug\Gas_test2.Main.csproj.GenerateResource.Cache
+E:\code\Gas_test2\Code\Gas_test2.Main\obj\Debug\Gas_test2.Main.exe
+E:\code\Gas_test2\Code\Gas_test2.Main\obj\Debug\Gas_test2.Main.pdb

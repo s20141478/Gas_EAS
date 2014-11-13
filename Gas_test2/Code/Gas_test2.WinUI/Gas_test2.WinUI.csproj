@@ -101,40 +101,40 @@
     <Compile Include="FileConfig.Designer.cs">
       <DependentUpon>FileConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\AddAlgorithm.cs">
+    <Compile Include="FormView\AddAlgorithm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\AddAlgorithm.Designer.cs">
+    <Compile Include="FormView\AddAlgorithm.Designer.cs">
       <DependentUpon>AddAlgorithm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\AddEquip.cs">
+    <Compile Include="FormView\AddEquip.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\AddEquip.Designer.cs">
+    <Compile Include="FormView\AddEquip.Designer.cs">
       <DependentUpon>AddEquip.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\ClearData.cs">
+    <Compile Include="FormView\ClearData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\ClearData.Designer.cs">
+    <Compile Include="FormView\ClearData.Designer.cs">
       <DependentUpon>ClearData.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\ErrShow.cs">
+    <Compile Include="FormView\ErrShow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\ErrShow.Designer.cs">
+    <Compile Include="FormView\ErrShow.Designer.cs">
       <DependentUpon>ErrShow.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\HaveBack.cs">
+    <Compile Include="FormView\HaveBack.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\HaveBack.Designer.cs">
+    <Compile Include="FormView\HaveBack.Designer.cs">
       <DependentUpon>HaveBack.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVoew\SetFCSTPara.cs">
+    <Compile Include="FormView\SetFCSTPara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVoew\SetFCSTPara.Designer.cs">
+    <Compile Include="FormView\SetFCSTPara.Designer.cs">
       <DependentUpon>SetFCSTPara.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuleClass\FuncClass.cs" />
@@ -175,16 +175,16 @@
     <EmbeddedResource Include="FileConfig.resx">
       <DependentUpon>FileConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVoew\AddAlgorithm.resx">
+    <EmbeddedResource Include="FormView\AddAlgorithm.resx">
       <DependentUpon>AddAlgorithm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVoew\AddEquip.resx">
+    <EmbeddedResource Include="FormView\AddEquip.resx">
       <DependentUpon>AddEquip.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVoew\ErrShow.resx">
+    <EmbeddedResource Include="FormView\ErrShow.resx">
       <DependentUpon>ErrShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVoew\HaveBack.resx">
+    <EmbeddedResource Include="FormView\HaveBack.resx">
       <DependentUpon>HaveBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navigation.resx">
@@ -194,7 +194,6 @@
       <DependentUpon>SetAlgorithm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,5 +9,7 @@ namespace Gas_test2.BLL
 {
     public interface IGasDAL
     {
+        DataSet QueryTable(string TableName);
+        DataSet QueryTable(string column_name, string table_name);
     }
 }

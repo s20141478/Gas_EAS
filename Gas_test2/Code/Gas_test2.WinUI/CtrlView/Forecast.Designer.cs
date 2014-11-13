@@ -84,6 +84,7 @@
             this.btn_Err.TabIndex = 9;
             this.btn_Err.Text = "历史误差";
             this.btn_Err.UseVisualStyleBackColor = true;
+            this.btn_Err.Click += new System.EventHandler(this.btn_Err_Click);
             // 
             // btn_Para
             // 
@@ -93,6 +94,7 @@
             this.btn_Para.TabIndex = 8;
             this.btn_Para.Text = "参数设置";
             this.btn_Para.UseVisualStyleBackColor = true;
+            this.btn_Para.Click += new System.EventHandler(this.btn_Para_Click);
             // 
             // panel2
             // 
@@ -111,7 +113,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 325);
+            this.dataGridView1.Size = new System.Drawing.Size(930, 321);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage2
@@ -120,7 +122,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(739, 331);
+            this.tabPage2.Size = new System.Drawing.Size(936, 327);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -236,6 +238,7 @@
             this.btn_FCST.TabIndex = 1;
             this.btn_FCST.Text = "预测";
             this.btn_FCST.UseVisualStyleBackColor = true;
+            this.btn_FCST.Click += new System.EventHandler(this.btn_FCST_Click);
             // 
             // Forecast
             // 
@@ -244,6 +247,7 @@
             this.Controls.Add(this.spCtn);
             this.Name = "Forecast";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.Forecast_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

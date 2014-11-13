@@ -66,6 +66,7 @@
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "更改";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // lbox_Equip
             // 
@@ -96,6 +97,7 @@
             this.btn_Read.TabIndex = 7;
             this.btn_Read.Text = "读取";
             this.btn_Read.UseVisualStyleBackColor = true;
+            this.btn_Read.Click += new System.EventHandler(this.btn_Read_Click);
             // 
             // btn_Delete
             // 
@@ -105,6 +107,7 @@
             this.btn_Delete.TabIndex = 7;
             this.btn_Delete.Text = "删除";
             this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Add
             // 
@@ -114,6 +117,7 @@
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "添加";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // lbox_Type
             // 
@@ -231,6 +235,7 @@
             this.btn_create.TabIndex = 16;
             this.btn_create.Text = "创建表";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
             // tabControl1
             // 
@@ -251,6 +256,7 @@
             this.btn_Right.TabIndex = 14;
             this.btn_Right.Text = "右移";
             this.btn_Right.UseVisualStyleBackColor = true;
+            this.btn_Right.Click += new System.EventHandler(this.btn_Right_Click);
             // 
             // btn_Left
             // 
@@ -260,6 +266,7 @@
             this.btn_Left.TabIndex = 13;
             this.btn_Left.Text = "左移";
             this.btn_Left.UseVisualStyleBackColor = true;
+            this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
             // 
             // EquipConfig
             // 
@@ -274,6 +281,7 @@
             this.Controls.Add(this.btn_Left);
             this.Name = "EquipConfig";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.EquipConfig_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

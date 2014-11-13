@@ -69,6 +69,7 @@
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "修改";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Delete
             // 
@@ -78,6 +79,7 @@
             this.btn_Delete.TabIndex = 7;
             this.btn_Delete.Text = "删除";
             this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Add
             // 
@@ -87,6 +89,7 @@
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "添加";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // lbox_Type
             // 
@@ -126,6 +129,7 @@
             this.btn_Browse1.TabIndex = 1;
             this.btn_Browse1.Text = "浏览";
             this.btn_Browse1.UseVisualStyleBackColor = true;
+            this.btn_Browse1.Click += new System.EventHandler(this.btn_Browse1_Click);
             // 
             // textBox1
             // 
@@ -163,6 +167,7 @@
             this.btn_Browse2.TabIndex = 3;
             this.btn_Browse2.Text = "浏览";
             this.btn_Browse2.UseVisualStyleBackColor = true;
+            this.btn_Browse2.Click += new System.EventHandler(this.btn_Browse2_Click);
             // 
             // textBox2
             // 
@@ -179,6 +184,7 @@
             this.btn_Enter.TabIndex = 19;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
             // openFileDialog1
             // 
@@ -194,6 +200,7 @@
             this.Controls.Add(this.btn_Enter);
             this.Name = "FileConfig";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.FileConfig_Load);
             this.gbox1.ResumeLayout(false);
             this.gbox2.ResumeLayout(false);
             this.gbox2.PerformLayout();
