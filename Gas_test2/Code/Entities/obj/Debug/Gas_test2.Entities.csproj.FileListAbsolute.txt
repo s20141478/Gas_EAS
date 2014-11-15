@@ -2,3 +2,8 @@ E:\code\Gas_test2\Publish\Gas_test2.Entities.dll
 E:\code\Gas_test2\Publish\Gas_test2.Entities.pdb
 E:\code\Gas_test2\Code\Entities\obj\Debug\Gas_test2.Entities.dll
 E:\code\Gas_test2\Code\Entities\obj\Debug\Gas_test2.Entities.pdb
+K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\Gas_test2.Entities.dll
+K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\Gas_test2.Entities.pdb
+K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Code\Entities\obj\Debug\Gas_test2.Entities.dll
+K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Code\Entities\obj\Debug\Gas_test2.Entities.pdb
+K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Code\Entities\obj\Debug\Gas_test2.Entities.csprojResolveAssemblyReference.cache
