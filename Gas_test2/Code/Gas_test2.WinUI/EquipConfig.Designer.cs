@@ -72,9 +72,9 @@
             // 
             this.lbox_Equip.FormattingEnabled = true;
             this.lbox_Equip.ItemHeight = 12;
-            this.lbox_Equip.Location = new System.Drawing.Point(37, 20);
+            this.lbox_Equip.Location = new System.Drawing.Point(32, 20);
             this.lbox_Equip.Name = "lbox_Equip";
-            this.lbox_Equip.Size = new System.Drawing.Size(124, 292);
+            this.lbox_Equip.Size = new System.Drawing.Size(150, 292);
             this.lbox_Equip.TabIndex = 6;
             // 
             // groupBox2
@@ -84,7 +84,7 @@
             this.groupBox2.Controls.Add(this.lbox_Equip);
             this.groupBox2.Location = new System.Drawing.Point(310, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 411);
+            this.groupBox2.Size = new System.Drawing.Size(210, 411);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "选择加入的设备：";
@@ -125,7 +125,7 @@
             this.lbox_Type.ItemHeight = 12;
             this.lbox_Type.Location = new System.Drawing.Point(27, 20);
             this.lbox_Type.Name = "lbox_Type";
-            this.lbox_Type.Size = new System.Drawing.Size(147, 292);
+            this.lbox_Type.Size = new System.Drawing.Size(150, 292);
             this.lbox_Type.TabIndex = 5;
             // 
             // groupBox1

@@ -45,7 +45,7 @@
             this.gbox1.Controls.Add(this.lbox_Equip);
             this.gbox1.Location = new System.Drawing.Point(60, 26);
             this.gbox1.Name = "gbox1";
-            this.gbox1.Size = new System.Drawing.Size(252, 356);
+            this.gbox1.Size = new System.Drawing.Size(252, 374);
             this.gbox1.TabIndex = 3;
             this.gbox1.TabStop = false;
             this.gbox1.Text = "所包含设备：";
@@ -54,9 +54,9 @@
             // 
             this.lbox_Equip.FormattingEnabled = true;
             this.lbox_Equip.ItemHeight = 12;
-            this.lbox_Equip.Location = new System.Drawing.Point(38, 56);
+            this.lbox_Equip.Location = new System.Drawing.Point(38, 46);
             this.lbox_Equip.Name = "lbox_Equip";
-            this.lbox_Equip.Size = new System.Drawing.Size(181, 268);
+            this.lbox_Equip.Size = new System.Drawing.Size(180, 292);
             this.lbox_Equip.TabIndex = 0;
             // 
             // gbox2
@@ -65,9 +65,9 @@
             this.gbox2.Controls.Add(this.btn_Right);
             this.gbox2.Controls.Add(this.btn_Left);
             this.gbox2.Controls.Add(this.lbox_UsedAlg);
-            this.gbox2.Location = new System.Drawing.Point(358, 26);
+            this.gbox2.Location = new System.Drawing.Point(352, 26);
             this.gbox2.Name = "gbox2";
-            this.gbox2.Size = new System.Drawing.Size(477, 356);
+            this.gbox2.Size = new System.Drawing.Size(517, 374);
             this.gbox2.TabIndex = 4;
             this.gbox2.TabStop = false;
             this.gbox2.Text = "算法配置：";
@@ -78,12 +78,12 @@
             this.lbox_Alg.ItemHeight = 12;
             this.lbox_Alg.Location = new System.Drawing.Point(33, 46);
             this.lbox_Alg.Name = "lbox_Alg";
-            this.lbox_Alg.Size = new System.Drawing.Size(147, 292);
+            this.lbox_Alg.Size = new System.Drawing.Size(180, 292);
             this.lbox_Alg.TabIndex = 9;
             // 
             // btn_Right
             // 
-            this.btn_Right.Location = new System.Drawing.Point(218, 180);
+            this.btn_Right.Location = new System.Drawing.Point(234, 222);
             this.btn_Right.Name = "btn_Right";
             this.btn_Right.Size = new System.Drawing.Size(58, 34);
             this.btn_Right.TabIndex = 8;
@@ -93,7 +93,7 @@
             // 
             // btn_Left
             // 
-            this.btn_Left.Location = new System.Drawing.Point(218, 72);
+            this.btn_Left.Location = new System.Drawing.Point(234, 114);
             this.btn_Left.Name = "btn_Left";
             this.btn_Left.Size = new System.Drawing.Size(58, 38);
             this.btn_Left.TabIndex = 7;
@@ -107,14 +107,14 @@
             this.lbox_UsedAlg.ItemHeight = 12;
             this.lbox_UsedAlg.Location = new System.Drawing.Point(309, 46);
             this.lbox_UsedAlg.Name = "lbox_UsedAlg";
-            this.lbox_UsedAlg.Size = new System.Drawing.Size(124, 292);
+            this.lbox_UsedAlg.Size = new System.Drawing.Size(180, 292);
             this.lbox_UsedAlg.TabIndex = 10;
             // 
             // btn_Enter
             // 
-            this.btn_Enter.Location = new System.Drawing.Point(809, 407);
+            this.btn_Enter.Location = new System.Drawing.Point(881, 375);
             this.btn_Enter.Name = "btn_Enter";
-            this.btn_Enter.Size = new System.Drawing.Size(75, 23);
+            this.btn_Enter.Size = new System.Drawing.Size(75, 49);
             this.btn_Enter.TabIndex = 5;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.gbox2);
             this.Controls.Add(this.btn_Enter);
             this.Name = "SetAlgorithm";
-            this.Size = new System.Drawing.Size(944, 457);
+            this.Size = new System.Drawing.Size(973, 457);
             this.Load += new System.EventHandler(this.SetAlgorithm_Load);
             this.gbox1.ResumeLayout(false);
             this.gbox2.ResumeLayout(false);

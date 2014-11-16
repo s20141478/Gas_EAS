@@ -19,7 +19,7 @@ namespace Gas_test2.BLL
         private FileClass fileControl = new FileClass();
         private DataClass dataControl = new DataClass();
 
-        public void FocastHR()
+        public void Focast()
         {
             
             #region 参数设定
