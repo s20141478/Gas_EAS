@@ -31,5 +31,12 @@ namespace Gas_test2.DAL
 
         }
 
+        public DataSet QueryTable(string Clom ,string ClomName, string TableName)
+        {
+            DataSet returndataset = baseClass.getDataSet("select "+ Clom + ClomName + " from " + TableName, TableName);
+            return returndataset;
+
+        }
+
     }
 }

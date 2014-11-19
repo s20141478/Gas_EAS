@@ -39,22 +39,28 @@
             this.txtbox_Num = new System.Windows.Forms.TextBox();
             this.lab_Num = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbox_L3 = new System.Windows.Forms.ListBox();
             this.tbPage_L3 = new System.Windows.Forms.TabPage();
-            this.lbox_L2 = new System.Windows.Forms.ListBox();
+            this.dgv_L3 = new System.Windows.Forms.DataGridView();
             this.tbPage_L2 = new System.Windows.Forms.TabPage();
-            this.lbox_L1 = new System.Windows.Forms.ListBox();
+            this.dgv_L2 = new System.Windows.Forms.DataGridView();
             this.tbPage_L1 = new System.Windows.Forms.TabPage();
+            this.dgv_L1 = new System.Windows.Forms.DataGridView();
             this.btn_create = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.btn_Right = new System.Windows.Forms.Button();
             this.btn_Left = new System.Windows.Forms.Button();
+            this.L1Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.L2Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.L3Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tbPage_L3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L3)).BeginInit();
             this.tbPage_L2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L2)).BeginInit();
             this.tbPage_L1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,19 +171,9 @@
             this.panel1.Size = new System.Drawing.Size(317, 100);
             this.panel1.TabIndex = 17;
             // 
-            // lbox_L3
-            // 
-            this.lbox_L3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbox_L3.FormattingEnabled = true;
-            this.lbox_L3.ItemHeight = 12;
-            this.lbox_L3.Location = new System.Drawing.Point(0, 0);
-            this.lbox_L3.Name = "lbox_L3";
-            this.lbox_L3.Size = new System.Drawing.Size(309, 205);
-            this.lbox_L3.TabIndex = 0;
-            // 
             // tbPage_L3
             // 
-            this.tbPage_L3.Controls.Add(this.lbox_L3);
+            this.tbPage_L3.Controls.Add(this.dgv_L3);
             this.tbPage_L3.Location = new System.Drawing.Point(4, 22);
             this.tbPage_L3.Name = "tbPage_L3";
             this.tbPage_L3.Size = new System.Drawing.Size(309, 205);
@@ -185,19 +181,21 @@
             this.tbPage_L3.Text = "L3数据";
             this.tbPage_L3.UseVisualStyleBackColor = true;
             // 
-            // lbox_L2
+            // dgv_L3
             // 
-            this.lbox_L2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbox_L2.FormattingEnabled = true;
-            this.lbox_L2.ItemHeight = 12;
-            this.lbox_L2.Location = new System.Drawing.Point(3, 3);
-            this.lbox_L2.Name = "lbox_L2";
-            this.lbox_L2.Size = new System.Drawing.Size(303, 199);
-            this.lbox_L2.TabIndex = 0;
+            this.dgv_L3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_L3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.L3Name});
+            this.dgv_L3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_L3.Location = new System.Drawing.Point(0, 0);
+            this.dgv_L3.Name = "dgv_L3";
+            this.dgv_L3.RowTemplate.Height = 23;
+            this.dgv_L3.Size = new System.Drawing.Size(309, 205);
+            this.dgv_L3.TabIndex = 0;
             // 
             // tbPage_L2
             // 
-            this.tbPage_L2.Controls.Add(this.lbox_L2);
+            this.tbPage_L2.Controls.Add(this.dgv_L2);
             this.tbPage_L2.Location = new System.Drawing.Point(4, 22);
             this.tbPage_L2.Name = "tbPage_L2";
             this.tbPage_L2.Padding = new System.Windows.Forms.Padding(3);
@@ -206,19 +204,21 @@
             this.tbPage_L2.Text = "L2数据";
             this.tbPage_L2.UseVisualStyleBackColor = true;
             // 
-            // lbox_L1
+            // dgv_L2
             // 
-            this.lbox_L1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbox_L1.FormattingEnabled = true;
-            this.lbox_L1.ItemHeight = 12;
-            this.lbox_L1.Location = new System.Drawing.Point(3, 3);
-            this.lbox_L1.Name = "lbox_L1";
-            this.lbox_L1.Size = new System.Drawing.Size(303, 199);
-            this.lbox_L1.TabIndex = 0;
+            this.dgv_L2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_L2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.L2Name});
+            this.dgv_L2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_L2.Location = new System.Drawing.Point(3, 3);
+            this.dgv_L2.Name = "dgv_L2";
+            this.dgv_L2.RowTemplate.Height = 23;
+            this.dgv_L2.Size = new System.Drawing.Size(303, 199);
+            this.dgv_L2.TabIndex = 0;
             // 
             // tbPage_L1
             // 
-            this.tbPage_L1.Controls.Add(this.lbox_L1);
+            this.tbPage_L1.Controls.Add(this.dgv_L1);
             this.tbPage_L1.Location = new System.Drawing.Point(4, 22);
             this.tbPage_L1.Name = "tbPage_L1";
             this.tbPage_L1.Padding = new System.Windows.Forms.Padding(3);
@@ -226,6 +226,18 @@
             this.tbPage_L1.TabIndex = 0;
             this.tbPage_L1.Text = "L1数据";
             this.tbPage_L1.UseVisualStyleBackColor = true;
+            // 
+            // dgv_L1
+            // 
+            this.dgv_L1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_L1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.L1Name});
+            this.dgv_L1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_L1.Location = new System.Drawing.Point(3, 3);
+            this.dgv_L1.Name = "dgv_L1";
+            this.dgv_L1.RowTemplate.Height = 23;
+            this.dgv_L1.Size = new System.Drawing.Size(303, 199);
+            this.dgv_L1.TabIndex = 0;
             // 
             // btn_create
             // 
@@ -268,6 +280,21 @@
             this.btn_Left.UseVisualStyleBackColor = true;
             this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
             // 
+            // L1Name
+            // 
+            this.L1Name.HeaderText = "因素名称";
+            this.L1Name.Name = "L1Name";
+            // 
+            // L2Name
+            // 
+            this.L2Name.HeaderText = "因素名称";
+            this.L2Name.Name = "L2Name";
+            // 
+            // L3Name
+            // 
+            this.L3Name.HeaderText = "因素名称";
+            this.L3Name.Name = "L3Name";
+            // 
             // EquipConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -287,8 +314,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tbPage_L3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L3)).EndInit();
             this.tbPage_L2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L2)).EndInit();
             this.tbPage_L1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_L1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -307,15 +337,18 @@
         private System.Windows.Forms.TextBox txtbox_Num;
         private System.Windows.Forms.Label lab_Num;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox lbox_L3;
         private System.Windows.Forms.TabPage tbPage_L3;
-        private System.Windows.Forms.ListBox lbox_L2;
         private System.Windows.Forms.TabPage tbPage_L2;
-        private System.Windows.Forms.ListBox lbox_L1;
         private System.Windows.Forms.TabPage tbPage_L1;
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button btn_Right;
         private System.Windows.Forms.Button btn_Left;
+        private System.Windows.Forms.DataGridView dgv_L3;
+        private System.Windows.Forms.DataGridView dgv_L2;
+        private System.Windows.Forms.DataGridView dgv_L1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn L3Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn L2Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn L1Name;
     }
 }

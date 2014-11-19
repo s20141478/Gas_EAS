@@ -1,0 +1,14 @@
+[类型]:Error
+[线程]:9
+[内存]:7.71M
+[时间]:2014-11-18 17:52:35
+[内容]:容器中没有类型为Gas_test2.BLL.IGasDAL的组件
+[来源]:EAS.MicroKernel
+[目标]:System.Object GetComponentInstance(System.Type)
+[堆栈]:   在 unKS0jjYuKqaSe9SWt5.eqWXMMjLgDclqol1fi6.GetComponentInstance(Type )
+   在 gw0ASOjH9BC19fuEX95.Wgyk7wjr2KpbgrMY4oV.mfGWtZ45yEAGPPb7G5q(Object , Type serviceType)
+   在 gw0ASOjH9BC19fuEX95.Wgyk7wjr2KpbgrMY4oV.XlgHFSZDfl(Type )
+   在 EAS.Services.DirectServiceBridger.AdwfdOe2sX05FWFyW1(Type )
+   在 EAS.Services.DirectServiceBridger.InvokeMethod(Type serviceType, MethodBase method, Object[] args)
+
+

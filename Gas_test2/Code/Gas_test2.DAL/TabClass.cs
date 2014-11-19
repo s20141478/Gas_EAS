@@ -7,5 +7,6 @@ namespace Gas_test2.DAL
 {
     public class TabClass
     {
+
     }
 }

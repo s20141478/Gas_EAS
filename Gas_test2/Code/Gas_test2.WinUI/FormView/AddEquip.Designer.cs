@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSName = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Enter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtSName
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 9;
+            this.txtSName.Location = new System.Drawing.Point(140, 111);
+            this.txtSName.Name = "txtSName";
+            this.txtSName.Size = new System.Drawing.Size(100, 21);
+            this.txtSName.TabIndex = 9;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 8;
+            this.txtName.Location = new System.Drawing.Point(140, 45);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 21);
+            this.txtName.TabIndex = 8;
             // 
             // label2
             // 
@@ -75,14 +75,15 @@
             this.btn_Enter.TabIndex = 5;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
             // AddEquip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Enter);
@@ -95,8 +96,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSName;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Enter;

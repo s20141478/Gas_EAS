@@ -1,0 +1,161 @@
+2014-11-18 17:51:08==>INFO :BaseDirectory:=K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\
+2014-11-18 17:51:10==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll Fail!
+[类型]:Error
+[线程]:10
+[内存]:2.13M
+[时间]:2014-11-18 17:51:10
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:51:11==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll Fail!
+[类型]:Error
+[线程]:10
+[内存]:2.27M
+[时间]:2014-11-18 17:51:11
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:51:12==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL Fail!
+[类型]:Error
+[线程]:10
+[内存]:2.38M
+[时间]:2014-11-18 17:51:12
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL”或它的某一个依赖项。试图加载格式不正确的程序。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:52:15==>INFO :BaseDirectory:=K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\
+2014-11-18 17:52:18==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll Fail!
+[类型]:Error
+[线程]:11
+[内存]:1.97M
+[时间]:2014-11-18 17:52:18
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:52:18==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll Fail!
+[类型]:Error
+[线程]:11
+[内存]:2.11M
+[时间]:2014-11-18 17:52:18
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:52:19==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL Fail!
+[类型]:Error
+[线程]:11
+[内存]:2.22M
+[时间]:2014-11-18 17:52:19
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL”或它的某一个依赖项。试图加载格式不正确的程序。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:52:21==>INFO :Load Gas_test2.BLL.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null Types Fail!
+[类型]:Error
+[线程]:11
+[内存]:1.88M
+[时间]:2014-11-18 17:52:21
+[内容]:无法加载一个或多个请求的类型。有关更多信息，请检索 LoaderExceptions 属性。
+[来源]:mscorlib
+[目标]:System.RuntimeType[] GetTypes(System.Reflection.RuntimeModule)
+[堆栈]:   在 System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   在 System.Reflection.RuntimeModule.GetTypes()
+   在 System.Reflection.Assembly.GetTypes()
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.X5Js01MS6BILeQ6bUQP(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.cYIcxoVC4v(Assembly )
+
+2014-11-18 17:53:52==>INFO :BaseDirectory:=K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\
+2014-11-18 17:53:54==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll Fail!
+[类型]:Error
+[线程]:11
+[内存]:1.99M
+[时间]:2014-11-18 17:53:54
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\grdes50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:53:54==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll Fail!
+[类型]:Error
+[线程]:11
+[内存]:2.13M
+[时间]:2014-11-18 17:53:54
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\gregn50.dll”或它的某一个依赖项。该模块应包含一个程序集清单。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+
+2014-11-18 17:53:55==>INFO :Load K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL Fail!
+[类型]:Error
+[线程]:11
+[内存]:1.74M
+[时间]:2014-11-18 17:53:55
+[内容]:未能加载文件或程序集“file:///K:\Users\SJP\Documents\GitHub\Gas_EAS\Gas_test2\Publish\System.Data.SQLite.DLL”或它的某一个依赖项。试图加载格式不正确的程序。
+[来源]:mscorlib
+[目标]:System.Reflection.RuntimeAssembly _nLoad(System.Reflection.AssemblyName, System.String, System.Security.Policy.Evidence, System.Reflection.RuntimeAssembly, System.Threading.StackCrawlMark ByRef, IntPtr, Boolean, Boolean, Boolean)
+[堆栈]:   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   在 System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.MqswC4MKmATg9wOr07s(Object )
+   在 vFNCuhjwfOSeLcsPluk.e1mu5pj89W74FB5hZZb.QpccNpw0JY(String )
+

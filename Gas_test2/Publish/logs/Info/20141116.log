@@ -1,0 +1,18 @@
+2014-11-16 19:43:11==>INFO :组件定义:
+	Key=Serializer,Type=EAS.Serialization.BinarySerializer,EAS.MicroKernel
+	Key=ServiceBridger,Type=EAS.Services.DirectServiceBridger,EAS.MicroKernel
+	Key=DataAccessor,Type=EAS.Data.Access.DataAccessor,EAS.Data
+	Key=DbProvider,Type=EAS.Data.Access.SqlClientDbProvider,EAS.Data
+	Key=TSqlLanguage,Type=EAS.Data.Linq.TSqlLanguage,EAS.Data
+	Key=Logger,Type=EAS.Loggers.TextLogger,EAS.MicroKernel
+	Key=OrmAccessor,Type=EAS.Data.ORM.OrmAccessor,EAS.Data
+
+2014-11-16 20:09:45==>INFO :组件定义:
+	Key=Serializer,Type=EAS.Serialization.BinarySerializer,EAS.MicroKernel
+	Key=ServiceBridger,Type=EAS.Services.DirectServiceBridger,EAS.MicroKernel
+	Key=DataAccessor,Type=EAS.Data.Access.DataAccessor,EAS.Data
+	Key=DbProvider,Type=EAS.Data.Access.SqlClientDbProvider,EAS.Data
+	Key=TSqlLanguage,Type=EAS.Data.Linq.TSqlLanguage,EAS.Data
+	Key=Logger,Type=EAS.Loggers.TextLogger,EAS.MicroKernel
+	Key=OrmAccessor,Type=EAS.Data.ORM.OrmAccessor,EAS.Data
+

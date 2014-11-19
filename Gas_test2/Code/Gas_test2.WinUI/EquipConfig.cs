@@ -48,100 +48,127 @@ namespace Gas_test2.WinUI
         private void EquipConfig_Load(object sender, EventArgs e)
         {
             lbox_Type.Items.Clear();
-            dataset.Clear();
-            //dataset = DALFunc.QueryTable("EquipName", "EquipTypeAbl");
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipName", "EquipTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
+            FreshLbox("EquipName", "EquipTypeAbl", "lbox_Type");
 
             lbox_Equip.Items.Clear();
-            dataset.Clear();
-            //dataset = DALFunc.QueryTable("EquipTypeSlet");
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipName","EquipTypeSlet");
-            //lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
-
+            FreshLbox("EquipName", "EquipTypeSlet", "lbox_Equip");
+            
             txtbox_Num.Text = "";
-            lbox_L1.Items.Clear();
-            lbox_L2.Items.Clear();
-            lbox_L3.Items.Clear();
+            dgv_L1.Rows.Clear();
+            dgv_L2.Rows.Clear();
+            dgv_L3.Rows.Clear();
         }
+
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
             
-             FormView.AddEquip addequip = new FormView.AddEquip();
-            addequip.Show();
+            FormView.AddEquip addequip = new FormView.AddEquip();
+            addequip.ShowDialog();
             addequip.Dispose();
 
-            dataset.Clear();
-            lbox_Type.Items.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipName", "EquipTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
+            FreshLbox("EquipName", "EquipTypeAbl", "lbox_Type");
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
             lbox_Type.Items.RemoveAt(lbox_Type.SelectedIndex);
             /////////删除表一行数据
-
-            dataset.Clear();
-            lbox_Equip.Items.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipName", "EquipTypeSlet");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
+            ServiceContainer.GetService<IGasDAL>().DeletData(lbox_Type.SelectedItem.ToString(), "EquipName", "EquipTypeSlet");
+            FreshLbox("EquipName", "EquipTypeAbl", "lbox_Type");
         }
 
         private void btn_Left_Click(object sender, EventArgs e)
         {
-            lbox_Equip.Items.RemoveAt(lbox_Equip.SelectedIndex);
+            if (lbox_Equip.Items.Count != 0)
+            {
+                if (lbox_Equip.SelectedItems.Count != 0)
+                    lbox_Equip.Items.RemoveAt(lbox_Equip.SelectedIndex);
+            }
         }
 
         private void btn_Right_Click(object sender, EventArgs e)
         {
-            lbox_Equip.Items.Add(lbox_Type.SelectedItem);
+            if (lbox_Type.Items.Count != 0)
+            {
+                if (lbox_Type.SelectedItems.Count != 0)
+                    if (!lbox_Equip.Items.Contains(lbox_Type.SelectedItem))
+                        lbox_Equip.Items.Add(lbox_Type.SelectedItem);
+            }
+            
         }
 
         private void btn_Read_Click(object sender, EventArgs e)
         {
             string L1, L2, L3;
+            //FreshLbox("EquipName", "EquipTypeSlet", "lbox_Equip");
             dataset.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipName", "EquipTypeSlet");
+            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipTypeSlet");
             txtbox_Num.Text = dataset.Tables[0].Rows[3].ToString();
 
             L1 = dataset.Tables[0].Rows[4].ToString();
             string[] L1D = L1.Split(';');
-            lbox_L1.Items.Clear();
+            dgv_L1.Rows.Clear();
             for (int i = 0; i < L1D.Count(); i++)
             {
-                lbox_L1.Items.Add(L1D[i]);
+                dgv_L1.Rows.Add(L1D[i]);
             }
 
             L2 = dataset.Tables[0].Rows[5].ToString();
             string[] L2D = L2.Split(';');
-            lbox_L2.Items.Clear();
+            dgv_L2.Rows.Clear();
             for (int i = 0; i < L2D.Count(); i++)
             {
-                lbox_L2.Items.Add(L2D[i]);
+                dgv_L2.Rows.Add(L2D[i]);
             }
 
             L3 = dataset.Tables[0].Rows[6].ToString();
             string[] L3D = L3.Split(';');
-            lbox_L3.Items.Clear();
+            dgv_L3.Rows.Clear();
             for (int i = 0; i < L3D.Count(); i++)
             {
-                lbox_L3.Items.Add(L3D[i]);
+                dgv_L3.Rows.Add(L3D[i]);
             }
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+
             /////写EquipTypeSlet数据表
+            ServiceContainer.GetService<IGasDAL>().UpdateEquipTypeSlet("","","","","");
+            
         }
 
         private void btn_create_Click(object sender, EventArgs e)
         {
             //////////创建数据表
+            ServiceContainer.GetService<IGasDAL>().CreatTab();
+
         }
 
 
+        /// <summary>
+        /// 读取数据库数据到listbox
+        /// </summary>
+        /// <param name="cloum">列名</param>
+        /// <param name="tab">表名</param>
+        /// <param name="listbox">listbox名</param>
+        private void FreshLbox(string cloum, string tab,string listbox)
+        {
+            dataset.Clear();
+
+            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(cloum, tab);
+
+            int j = 0;
+            foreach (DataRow dr in dataset.Tables[0].Rows)
+            {
+                if (listbox == "lbox_Type")
+                    lbox_Type.Items.Add(dataset.Tables[0].Rows[j][0]);
+                else if (listbox == "lbox_Equip")
+                    lbox_Equip.Items.Add(dataset.Tables[0].Rows[j][0]);
+                j++;
+            }
+        }
 
 
 
