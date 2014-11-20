@@ -80,15 +80,6 @@ namespace Gas_test2.WinUI
 
         private void btn_Left_Click(object sender, EventArgs e)
         {
-            if (lbox_Equip.Items.Count != 0)
-            {
-                if (lbox_Equip.SelectedItems.Count != 0)
-                    lbox_Equip.Items.RemoveAt(lbox_Equip.SelectedIndex);
-            }
-        }
-
-        private void btn_Right_Click(object sender, EventArgs e)
-        {
             if (lbox_Type.Items.Count != 0)
             {
                 if (lbox_Type.SelectedItems.Count != 0)
@@ -98,51 +89,77 @@ namespace Gas_test2.WinUI
             
         }
 
+        private void btn_Right_Click(object sender, EventArgs e)
+        {
+            if (lbox_Equip.Items.Count != 0)
+            {
+                if (lbox_Equip.SelectedItems.Count != 0)
+                    lbox_Equip.Items.RemoveAt(lbox_Equip.SelectedIndex);
+            }
+        }
+
         private void btn_Read_Click(object sender, EventArgs e)
         {
-            string L1, L2, L3;
-            //FreshLbox("EquipName", "EquipTypeSlet", "lbox_Equip");
-            dataset.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipTypeSlet");
-            txtbox_Num.Text = dataset.Tables[0].Rows[3].ToString();
-
-            L1 = dataset.Tables[0].Rows[4].ToString();
-            string[] L1D = L1.Split(';');
-            dgv_L1.Rows.Clear();
-            for (int i = 0; i < L1D.Count(); i++)
+            if (lbox_Equip.SelectedItems.Count != 0)
             {
-                dgv_L1.Rows.Add(L1D[i]);
-            }
+                string L1, L2, L3;
+                
+                dataset.Clear();
+                dataset = ServiceContainer.GetService<IGasDAL>().QueryRow(lbox_Equip.SelectedItem.ToString(), "EquipTypeSlet");
+                txtbox_Num.Text = dataset.Tables[0].Rows[0]["EquipNum"].ToString();
 
-            L2 = dataset.Tables[0].Rows[5].ToString();
-            string[] L2D = L2.Split(';');
-            dgv_L2.Rows.Clear();
-            for (int i = 0; i < L2D.Count(); i++)
-            {
-                dgv_L2.Rows.Add(L2D[i]);
-            }
+                L1 = dataset.Tables[0].Rows[0]["L1"].ToString();
+                string[] L1D = L1.Split(';');
+                dgv_L1.Rows.Clear();
+                for (int i = 0; i < L1D.Count(); i++)
+                {
+                    dgv_L1.Rows.Add(L1D[i]);
+                }
 
-            L3 = dataset.Tables[0].Rows[6].ToString();
-            string[] L3D = L3.Split(';');
-            dgv_L3.Rows.Clear();
-            for (int i = 0; i < L3D.Count(); i++)
-            {
-                dgv_L3.Rows.Add(L3D[i]);
+                L2 = dataset.Tables[0].Rows[0]["L2"].ToString();
+                string[] L2D = L2.Split(';');
+                dgv_L2.Rows.Clear();
+                for (int i = 0; i < L2D.Count(); i++)
+                {
+                    dgv_L2.Rows.Add(L2D[i]);
+                }
+
+                L3 = dataset.Tables[0].Rows[0]["L3"].ToString();
+                string[] L3D = L3.Split(';');
+                dgv_L3.Rows.Clear();
+                for (int i = 0; i < L3D.Count(); i++)
+                {
+                    dgv_L3.Rows.Add(L3D[i]);
+                }
             }
+            else
+                MessageBox.Show("选择设备");
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-
+            string L1="", L2="", L3="";
+            for(int i=0;i<dgv_L1.Rows.Count;i++)
+            {
+                L1 = L1 + dgv_L1.Rows[i].Cells[0].ToString()+';';
+            }
+            for (int i = 0; i < dgv_L1.Rows.Count; i++)
+            {
+                L2 = L2 + dgv_L2.Rows[i].Cells[0].ToString() + ';';
+            }
+            for (int i = 0; i < dgv_L1.Rows.Count; i++)
+            {
+                L3 = L2 + dgv_L3.Rows[i].Cells[0].ToString() + ';';
+            }
             /////写EquipTypeSlet数据表
-            ServiceContainer.GetService<IGasDAL>().UpdateEquipTypeSlet("","","","","");
+            ServiceContainer.GetService<IGasDAL>().UpdateEquipTypeSlet(lbox_Equip.SelectedItem.ToString(), txtbox_Num.Text.Trim(), L1, L2, L3);
             
         }
 
         private void btn_create_Click(object sender, EventArgs e)
         {
             //////////创建数据表
-            ServiceContainer.GetService<IGasDAL>().CreatTab();
+            ServiceContainer.GetService<IGasDAL>().CreatEquipTab();
 
         }
 
@@ -157,7 +174,7 @@ namespace Gas_test2.WinUI
         {
             dataset.Clear();
 
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(cloum, tab);
+            dataset = ServiceContainer.GetService<IGasDAL>().QueryColumn(cloum, tab);
 
             int j = 0;
             foreach (DataRow dr in dataset.Tables[0].Rows)

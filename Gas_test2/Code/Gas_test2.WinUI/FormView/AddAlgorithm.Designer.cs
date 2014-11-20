@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btn_Enter = new System.Windows.Forms.Button();
-            this.textShortName = new System.Windows.Forms.TextBox();
-            this.textAlgName = new System.Windows.Forms.TextBox();
+            this.txtSName = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -43,20 +43,21 @@
             this.btn_Enter.TabIndex = 9;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
-            // textShortName
+            // txtSName
             // 
-            this.textShortName.Location = new System.Drawing.Point(137, 125);
-            this.textShortName.Name = "textShortName";
-            this.textShortName.Size = new System.Drawing.Size(100, 21);
-            this.textShortName.TabIndex = 8;
+            this.txtSName.Location = new System.Drawing.Point(137, 125);
+            this.txtSName.Name = "txtSName";
+            this.txtSName.Size = new System.Drawing.Size(100, 21);
+            this.txtSName.TabIndex = 8;
             // 
-            // textAlgName
+            // txtName
             // 
-            this.textAlgName.Location = new System.Drawing.Point(137, 43);
-            this.textAlgName.Name = "textAlgName";
-            this.textAlgName.Size = new System.Drawing.Size(100, 21);
-            this.textAlgName.TabIndex = 7;
+            this.txtName.Location = new System.Drawing.Point(137, 43);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 21);
+            this.txtName.TabIndex = 7;
             // 
             // label2
             // 
@@ -82,8 +83,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.btn_Enter);
-            this.Controls.Add(this.textShortName);
-            this.Controls.Add(this.textAlgName);
+            this.Controls.Add(this.txtSName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddAlgorithm";
@@ -96,8 +97,8 @@
         #endregion
 
         private System.Windows.Forms.Button btn_Enter;
-        private System.Windows.Forms.TextBox textShortName;
-        private System.Windows.Forms.TextBox textAlgName;
+        private System.Windows.Forms.TextBox txtSName;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

@@ -21,7 +21,7 @@ namespace Gas_test2.BLL
         {
             return (dataControl.QueryTable(table_name));
         }
-        public DataSet QueryTable(string column_name, string table_name)
+        public DataSet QueryColumn(string column_name, string table_name)
         {
             return (dataControl.QueryTable(column_name, table_name));
         }

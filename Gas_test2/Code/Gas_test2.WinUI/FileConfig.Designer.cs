@@ -43,6 +43,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_Enter = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.rbox = new System.Windows.Forms.RichTextBox();
             this.gbox1.SuspendLayout();
             this.gbox2.SuspendLayout();
             this.gbox3.SuspendLayout();
@@ -56,7 +57,7 @@
             this.gbox1.Controls.Add(this.lbox_Type);
             this.gbox1.Location = new System.Drawing.Point(54, 23);
             this.gbox1.Name = "gbox1";
-            this.gbox1.Size = new System.Drawing.Size(381, 411);
+            this.gbox1.Size = new System.Drawing.Size(321, 411);
             this.gbox1.TabIndex = 16;
             this.gbox1.TabStop = false;
             this.gbox1.Text = "可选算法：";
@@ -69,6 +70,7 @@
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "修改";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Visible = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Delete
@@ -105,7 +107,7 @@
             this.gbox2.Controls.Add(this.lab1);
             this.gbox2.Controls.Add(this.btn_Browse1);
             this.gbox2.Controls.Add(this.textBox1);
-            this.gbox2.Location = new System.Drawing.Point(460, 59);
+            this.gbox2.Location = new System.Drawing.Point(434, 23);
             this.gbox2.Name = "gbox2";
             this.gbox2.Size = new System.Drawing.Size(430, 100);
             this.gbox2.TabIndex = 17;
@@ -140,12 +142,13 @@
             // 
             // gbox3
             // 
+            this.gbox3.Controls.Add(this.rbox);
             this.gbox3.Controls.Add(this.lab2);
             this.gbox3.Controls.Add(this.btn_Browse2);
             this.gbox3.Controls.Add(this.textBox2);
-            this.gbox3.Location = new System.Drawing.Point(460, 235);
+            this.gbox3.Location = new System.Drawing.Point(434, 148);
             this.gbox3.Name = "gbox3";
-            this.gbox3.Size = new System.Drawing.Size(430, 100);
+            this.gbox3.Size = new System.Drawing.Size(430, 286);
             this.gbox3.TabIndex = 18;
             this.gbox3.TabStop = false;
             this.gbox3.Text = "算法配置文件路径：";
@@ -178,17 +181,25 @@
             // 
             // btn_Enter
             // 
-            this.btn_Enter.Location = new System.Drawing.Point(740, 378);
+            this.btn_Enter.Location = new System.Drawing.Point(881, 338);
             this.btn_Enter.Name = "btn_Enter";
-            this.btn_Enter.Size = new System.Drawing.Size(114, 56);
+            this.btn_Enter.Size = new System.Drawing.Size(67, 96);
             this.btn_Enter.TabIndex = 19;
-            this.btn_Enter.Text = "确认";
+            this.btn_Enter.Text = "确认修改";
             this.btn_Enter.UseVisualStyleBackColor = true;
             this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // rbox
+            // 
+            this.rbox.Location = new System.Drawing.Point(35, 91);
+            this.rbox.Name = "rbox";
+            this.rbox.Size = new System.Drawing.Size(359, 157);
+            this.rbox.TabIndex = 21;
+            this.rbox.Text = "";
             // 
             // FileConfig
             // 
@@ -199,7 +210,7 @@
             this.Controls.Add(this.gbox3);
             this.Controls.Add(this.btn_Enter);
             this.Name = "FileConfig";
-            this.Size = new System.Drawing.Size(944, 457);
+            this.Size = new System.Drawing.Size(959, 457);
             this.Load += new System.EventHandler(this.FileConfig_Load);
             this.gbox1.ResumeLayout(false);
             this.gbox2.ResumeLayout(false);
@@ -227,5 +238,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn_Enter;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.RichTextBox rbox;
     }
 }

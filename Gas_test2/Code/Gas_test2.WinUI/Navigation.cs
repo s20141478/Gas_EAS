@@ -40,6 +40,15 @@ namespace Gas_test2.WinUI
 
         }
 
+        private void Navigation_Load(object sender, EventArgs e)
+        {
+            //Menustripe修改
+
+            //treeview
+
+
+        }
+
 
 
 

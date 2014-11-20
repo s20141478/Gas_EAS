@@ -163,6 +163,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Navigation";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.Navigation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);

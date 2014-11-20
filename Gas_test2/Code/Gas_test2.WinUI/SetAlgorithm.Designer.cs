@@ -43,7 +43,7 @@
             // gbox1
             // 
             this.gbox1.Controls.Add(this.lbox_Equip);
-            this.gbox1.Location = new System.Drawing.Point(60, 26);
+            this.gbox1.Location = new System.Drawing.Point(32, 37);
             this.gbox1.Name = "gbox1";
             this.gbox1.Size = new System.Drawing.Size(252, 374);
             this.gbox1.TabIndex = 3;
@@ -65,7 +65,7 @@
             this.gbox2.Controls.Add(this.btn_Right);
             this.gbox2.Controls.Add(this.btn_Left);
             this.gbox2.Controls.Add(this.lbox_UsedAlg);
-            this.gbox2.Location = new System.Drawing.Point(352, 26);
+            this.gbox2.Location = new System.Drawing.Point(324, 37);
             this.gbox2.Name = "gbox2";
             this.gbox2.Size = new System.Drawing.Size(517, 374);
             this.gbox2.TabIndex = 4;
@@ -112,11 +112,11 @@
             // 
             // btn_Enter
             // 
-            this.btn_Enter.Location = new System.Drawing.Point(881, 375);
+            this.btn_Enter.Location = new System.Drawing.Point(873, 380);
             this.btn_Enter.Name = "btn_Enter";
             this.btn_Enter.Size = new System.Drawing.Size(75, 49);
             this.btn_Enter.TabIndex = 5;
-            this.btn_Enter.Text = "确认";
+            this.btn_Enter.Text = "创建算法表";
             this.btn_Enter.UseVisualStyleBackColor = true;
             this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 

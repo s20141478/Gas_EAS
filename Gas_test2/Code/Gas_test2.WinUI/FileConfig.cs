@@ -45,9 +45,7 @@ namespace Gas_test2.WinUI
 
         private void FileConfig_Load(object sender, EventArgs e)
         {
-            lbox_Type.Items.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("AlgName", "AlgTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            FreshLbox("AlgName", "AlgTypeAbl");
 
             textBox1.Clear();
             textBox2.Clear();
@@ -56,16 +54,16 @@ namespace Gas_test2.WinUI
         private void btn_Add_Click(object sender, EventArgs e)
         {
             FormView.AddAlgorithm addalg = new FormView.AddAlgorithm();
-            addalg.Show();
+            addalg.ShowDialog();
             addalg.Dispose();
 
-            lbox_Type.Items.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("AlgName", "AlgTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            FreshLbox("AlgName", "AlgTypeAbl");
+            
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            ///不可见了
             FormView.AddAlgorithm addalg = new FormView.AddAlgorithm();
             addalg.Show();
             addalg.Dispose();
@@ -77,11 +75,8 @@ namespace Gas_test2.WinUI
         {
             lbox_Type.Items.RemoveAt(lbox_Type.SelectedIndex);
             /////删除一行数据
-
-            dataset.Clear();
-            lbox_Type.Items.Clear();
-            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("AlgName", "AlgTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
+            ServiceContainer.GetService<IGasDAL>().DeletData(lbox_Type.SelectedItem.ToString(), "AlgName", "AlgTypeAbl");
+            FreshLbox("AlgName", "AlgTypeAbl");
         }
 
         private void btn_Browse1_Click(object sender, EventArgs e)
@@ -101,17 +96,48 @@ namespace Gas_test2.WinUI
             {
                 string fileName = openFileDialog1.FileName; //得到文件名 
                 textBox2.Text = fileName;
+
+                using (StreamReader sr = new StreamReader(fileName))
+                {
+                    this.rbox.Text = sr.ReadToEnd();
+                }
             }
+            
         }
 
         private void btn_Enter_Click(object sender, EventArgs e)
         {
             ////update表数据
+            if (lbox_Type.SelectedItems.Count != 0)
+            {
+                ServiceContainer.GetService<IGasDAL>().UpdataAlgTypeAbl(textBox1.Text, textBox2.Text, "AlgName");
+            }
+            else
+                MessageBox.Show("请在左侧选择要修改的算法");
         }
 
 
 
 
+        /// <summary>
+        /// 读取数据库数据到listbox
+        /// </summary>
+        /// <param name="cloum">列名</param>
+        /// <param name="tab">表名</param>
+        /// <param name="listbox">listbox名</param>
+        private void FreshLbox(string cloum, string tab)
+        {
+            dataset.Clear();
+
+            dataset = ServiceContainer.GetService<IGasDAL>().QueryColumn(cloum, tab);
+
+            int j = 0;
+            foreach (DataRow dr in dataset.Tables[0].Rows)
+            {
+                lbox_Type.Items.Add(dataset.Tables[0].Rows[j][0]);
+                j++;
+            }
+        }
 
 
 

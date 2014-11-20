@@ -22,7 +22,15 @@ namespace Gas_test2.BLL
         /// <param name="column_name">列名</param>
         /// <param name="table_name">表名</param>
         /// <returns></returns>
-        DataSet QueryTable(string column_name, string table_name);
+        DataSet QueryColumn(string column_name, string table_name);
+
+        /// <summary>
+        /// 查询一张表的一行数据
+        /// </summary>
+        /// <param name="row_name">主键值</param>
+        /// <param name="table_name">表名</param>
+        /// <returns></returns>
+        DataSet QueryRow(string row_name, string table_name);
 
         /// <summary>
         /// 删除指定表中某行数据
@@ -49,6 +57,30 @@ namespace Gas_test2.BLL
         /// <param name="L3">L3因素</param>
         void UpdateEquipTypeSlet(string EquipName,string EquipNum,string L1,string L2,string L3);
 
-        void CreatTab();
+        /// <summary>
+        /// 添加AlgTypeAbl一行数据
+        /// </summary>
+        /// <param name="AlgName">算法名称</param>
+        /// <param name="ATabName">算法简称</param>
+        void AddAlgTypeAbl(string AlgName, string ATabName);
+
+        /// <summary>
+        /// 更新算法路径设置
+        /// </summary>
+        /// <param name="AlgRoute">m文件路径</param>
+        /// <param name="AlgParaRoute">算法配置路径</param>
+        /// <param name="AlgName">算法名称</param>
+        void UpdataAlgTypeAbl(string AlgRoute, string AlgParaRoute, string AlgName);
+
+        /// <summary>
+        /// 查询EquipName是否存在，存在则update，否则insert
+        /// </summary>
+        /// <param name="EquipName">设备名</param>
+        /// <param name="Alg">算法名称</param>
+        void EditAlgTypeSlet(string EquipName,string Alg);
+
+        void CreatEquipTab();
+
+        void CreatAlgTab();
     }
 }
