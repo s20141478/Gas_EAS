@@ -60,6 +60,7 @@ namespace Gas_test2.WinUI.CtrlView
         private void btn_Query_Click(object sender, EventArgs e)
         {
             //////查询
+
             SetGragh(zg1);
         }
 

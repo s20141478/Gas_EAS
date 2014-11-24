@@ -41,17 +41,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbPage_L3 = new System.Windows.Forms.TabPage();
             this.dgv_L3 = new System.Windows.Forms.DataGridView();
+            this.L3Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPage_L2 = new System.Windows.Forms.TabPage();
             this.dgv_L2 = new System.Windows.Forms.DataGridView();
+            this.L2Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPage_L1 = new System.Windows.Forms.TabPage();
             this.dgv_L1 = new System.Windows.Forms.DataGridView();
+            this.L1Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_create = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.btn_Right = new System.Windows.Forms.Button();
             this.btn_Left = new System.Windows.Forms.Button();
-            this.L1Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.L2Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.L3Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -178,7 +178,7 @@
             this.tbPage_L3.Name = "tbPage_L3";
             this.tbPage_L3.Size = new System.Drawing.Size(309, 205);
             this.tbPage_L3.TabIndex = 2;
-            this.tbPage_L3.Text = "L3数据";
+            this.tbPage_L3.Text = "调度数据";
             this.tbPage_L3.UseVisualStyleBackColor = true;
             // 
             // dgv_L3
@@ -193,6 +193,11 @@
             this.dgv_L3.Size = new System.Drawing.Size(309, 205);
             this.dgv_L3.TabIndex = 0;
             // 
+            // L3Name
+            // 
+            this.L3Name.HeaderText = "因素名称";
+            this.L3Name.Name = "L3Name";
+            // 
             // tbPage_L2
             // 
             this.tbPage_L2.Controls.Add(this.dgv_L2);
@@ -201,7 +206,7 @@
             this.tbPage_L2.Padding = new System.Windows.Forms.Padding(3);
             this.tbPage_L2.Size = new System.Drawing.Size(309, 205);
             this.tbPage_L2.TabIndex = 1;
-            this.tbPage_L2.Text = "L2数据";
+            this.tbPage_L2.Text = "操作数据";
             this.tbPage_L2.UseVisualStyleBackColor = true;
             // 
             // dgv_L2
@@ -216,6 +221,11 @@
             this.dgv_L2.Size = new System.Drawing.Size(303, 199);
             this.dgv_L2.TabIndex = 0;
             // 
+            // L2Name
+            // 
+            this.L2Name.HeaderText = "因素名称";
+            this.L2Name.Name = "L2Name";
+            // 
             // tbPage_L1
             // 
             this.tbPage_L1.Controls.Add(this.dgv_L1);
@@ -224,7 +234,7 @@
             this.tbPage_L1.Padding = new System.Windows.Forms.Padding(3);
             this.tbPage_L1.Size = new System.Drawing.Size(309, 205);
             this.tbPage_L1.TabIndex = 0;
-            this.tbPage_L1.Text = "L1数据";
+            this.tbPage_L1.Text = "直采数据";
             this.tbPage_L1.UseVisualStyleBackColor = true;
             // 
             // dgv_L1
@@ -238,6 +248,11 @@
             this.dgv_L1.RowTemplate.Height = 23;
             this.dgv_L1.Size = new System.Drawing.Size(303, 199);
             this.dgv_L1.TabIndex = 0;
+            // 
+            // L1Name
+            // 
+            this.L1Name.HeaderText = "因素名称";
+            this.L1Name.Name = "L1Name";
             // 
             // btn_create
             // 
@@ -279,21 +294,6 @@
             this.btn_Left.Text = "左移";
             this.btn_Left.UseVisualStyleBackColor = true;
             this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
-            // 
-            // L1Name
-            // 
-            this.L1Name.HeaderText = "因素名称";
-            this.L1Name.Name = "L1Name";
-            // 
-            // L2Name
-            // 
-            this.L2Name.HeaderText = "因素名称";
-            this.L2Name.Name = "L2Name";
-            // 
-            // L3Name
-            // 
-            this.L3Name.HeaderText = "因素名称";
-            this.L3Name.Name = "L3Name";
             // 
             // EquipConfig
             // 

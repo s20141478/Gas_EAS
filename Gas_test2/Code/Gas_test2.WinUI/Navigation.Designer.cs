@@ -39,12 +39,12 @@
             this.备份还原ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据库工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.柜位调度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Menu2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.Menu1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Menu_Forecast = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Query = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainMenu1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.MainMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -61,7 +61,7 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 24);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(348, 433);
+            this.treeView1.Size = new System.Drawing.Size(288, 433);
             this.treeView1.TabIndex = 6;
             // 
             // 帮助ToolStripMenuItem
@@ -82,7 +82,7 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.记事本ToolStripMenuItem.Text = "记事本";
             // 
             // 常用工具ToolStripMenuItem
@@ -97,19 +97,19 @@
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.计算器ToolStripMenuItem.Text = "计算器";
             // 
             // 清空数据库ToolStripMenuItem
             // 
             this.清空数据库ToolStripMenuItem.Name = "清空数据库ToolStripMenuItem";
-            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.清空数据库ToolStripMenuItem.Text = "清空数据库";
             // 
             // 备份还原ToolStripMenuItem
             // 
             this.备份还原ToolStripMenuItem.Name = "备份还原ToolStripMenuItem";
-            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.备份还原ToolStripMenuItem.Text = "备份/还原";
             // 
             // 数据库工具ToolStripMenuItem
@@ -127,32 +127,32 @@
             this.柜位调度ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.柜位调度ToolStripMenuItem.Text = "柜位调度";
             // 
-            // Menu2
+            // Menu_Forecast
             // 
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(67, 20);
-            this.Menu2.Text = "煤气预测";
+            this.Menu_Forecast.Name = "Menu_Forecast";
+            this.Menu_Forecast.Size = new System.Drawing.Size(67, 20);
+            this.Menu_Forecast.Text = "煤气预测";
             // 
-            // Menu1
+            // Menu_Query
             // 
-            this.Menu1.Name = "Menu1";
-            this.Menu1.Size = new System.Drawing.Size(67, 20);
-            this.Menu1.Text = "数据查询";
+            this.Menu_Query.Name = "Menu_Query";
+            this.Menu_Query.Size = new System.Drawing.Size(67, 20);
+            this.Menu_Query.Text = "数据查询";
             // 
-            // menuStrip1
+            // MainMenu1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Menu1,
-            this.Menu2,
+            this.MainMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Query,
+            this.Menu_Forecast,
             this.柜位调度ToolStripMenuItem,
             this.数据库工具ToolStripMenuItem,
             this.常用工具ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(944, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MainMenu1.Location = new System.Drawing.Point(0, 0);
+            this.MainMenu1.Name = "MainMenu1";
+            this.MainMenu1.Size = new System.Drawing.Size(944, 24);
+            this.MainMenu1.TabIndex = 4;
+            this.MainMenu1.Text = "menuStrip1";
             // 
             // Navigation
             // 
@@ -160,14 +160,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MainMenu1);
             this.Name = "Navigation";
             this.Size = new System.Drawing.Size(944, 457);
             this.Load += new System.EventHandler(this.Navigation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MainMenu1.ResumeLayout(false);
+            this.MainMenu1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,8 +186,8 @@
         private System.Windows.Forms.ToolStripMenuItem 备份还原ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 数据库工具ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 柜位调度ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem Menu2;
-        private System.Windows.Forms.ToolStripMenuItem Menu1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Forecast;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Query;
+        private System.Windows.Forms.MenuStrip MainMenu1;
     }
 }

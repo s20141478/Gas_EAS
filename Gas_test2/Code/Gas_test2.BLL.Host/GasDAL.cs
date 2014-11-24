@@ -17,13 +17,17 @@ namespace Gas_test2.BLL
     public class GasDAL:IGasDAL
     {
         private DataClass dataControl = new DataClass();
+
         public DataSet QueryTable(string table_name)
         {
             return (dataControl.QueryTable(table_name));
         }
+
         public DataSet QueryColumn(string column_name, string table_name)
         {
             return (dataControl.QueryTable(column_name, table_name));
         }
+
+        
     }
 }
