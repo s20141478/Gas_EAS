@@ -46,13 +46,27 @@ namespace Gas_test2.WinUI.CtrlView
 
         private void Query_Load(object sender, EventArgs e)
         {
-            
+
+            dataset.Clear();
             dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipTypeAbl");
-            string num = dataset.Tables[0].Rows[1].ToString();
-            for (int i = 0; i < int.Parse(num); i++)
+            DataView dvList = new DataView(dataset.Tables[0]);
+            
+            foreach (DataRowView dv in dvList)
             {
-                cbox1.Items.Add(i + "#设备");
+                
+                if (ModuleClass.FuncClass.ActivContrl[0].ToString()==dv["EquipName"].ToString())
+                {
+                    lab_Eq.Text ="选择"+ dv["EquipName"].ToString()+"设备号";
+                    for (int i = 0; i < int.Parse(dv["EquipNum"].ToString()); i++)
+                    {
+                        cbox1.Items.Add(i + "#设备");
+                    }
+                }
             }
+
+
+
+            
 
             SetSize();
         }
@@ -60,7 +74,21 @@ namespace Gas_test2.WinUI.CtrlView
         private void btn_Query_Click(object sender, EventArgs e)
         {
             //////查询
+            dataset.Clear();
+            if(CkListBox1.GetItemChecked(0))
+            {
+                dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(ModuleClass.FuncClass.ActivContrl[1].ToString() + cbox1.Text + "REAL");
+            }
+            if (CkListBox1.GetItemChecked(1))
+            {
+                dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(ModuleClass.FuncClass.ActivContrl[1].ToString() + cbox1.Text + "FCST");
+            }
+            if (CkListBox1.GetItemChecked(2))
+            {
+                dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(ModuleClass.FuncClass.ActivContrl[1].ToString() + cbox1.Text + "REAL");
+            }
 
+            DG1.DataSource = dataset.Tables[0];
             SetGragh(zg1);
         }
 
@@ -77,6 +105,19 @@ namespace Gas_test2.WinUI.CtrlView
             myPane.YAxis.Title.Text = "煤气量";// 纵坐标label
             //Set list
             PointPairList list = new PointPairList();
+
+            DataView dvList = new DataView(dataset.Tables[0]);
+            foreach (DataRowView dv in dvList)
+            {
+                for (int i = 0; i < 100; i++)
+                {
+
+                    double x = Convert.ToDouble(dv["TIME"]);
+                    double y = Convert.ToDouble(dv["FLOW"]);
+                    list.Add(x, y);
+                }
+
+            }            
             /*            List<HRGasReal> tempList = vList.ToList();
             
                         for (int i = 0; i < 100; i++)
@@ -130,6 +171,27 @@ namespace Gas_test2.WinUI.CtrlView
 
 
 
+        private void CkListBox1_ItemCheck(object sender,ItemCheckEventArgs e)
+        {
+
+            if (CkListBox1.CheckedItems.Count > 0)
+            {
+
+                for (int i = 0; i < CkListBox1.Items.Count; i++)
+                {
+
+                    if (i != e.Index)
+                    {
+
+                        this.CkListBox1.SetItemCheckState(i,System.Windows.Forms.CheckState.Unchecked);
+
+                    }
+
+                }
+
+            }
+
+        }
 
 
 

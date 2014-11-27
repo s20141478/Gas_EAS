@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.cbox1 = new System.Windows.Forms.ComboBox();
-            this.lbl3 = new System.Windows.Forms.Label();
+            this.lab_Eq = new System.Windows.Forms.Label();
             this.btn_Err = new System.Windows.Forms.Button();
             this.btn_Para = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,6 +47,9 @@
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.btn_FCST = new System.Windows.Forms.Button();
+            this.cbox2 = new System.Windows.Forms.ComboBox();
+            this.lab_Alg = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -57,6 +60,7 @@
             this.spCtn.Panel2.SuspendLayout();
             this.spCtn.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbox1
@@ -67,18 +71,18 @@
             this.cbox1.Size = new System.Drawing.Size(121, 20);
             this.cbox1.TabIndex = 1;
             // 
-            // lbl3
+            // lab_Eq
             // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(20, 16);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(53, 12);
-            this.lbl3.TabIndex = 0;
-            this.lbl3.Text = "设备号：";
+            this.lab_Eq.AutoSize = true;
+            this.lab_Eq.Location = new System.Drawing.Point(20, 16);
+            this.lab_Eq.Name = "lab_Eq";
+            this.lab_Eq.Size = new System.Drawing.Size(53, 12);
+            this.lab_Eq.TabIndex = 0;
+            this.lab_Eq.Text = "设备号：";
             // 
             // btn_Err
             // 
-            this.btn_Err.Location = new System.Drawing.Point(415, 58);
+            this.btn_Err.Location = new System.Drawing.Point(607, 58);
             this.btn_Err.Name = "btn_Err";
             this.btn_Err.Size = new System.Drawing.Size(153, 31);
             this.btn_Err.TabIndex = 9;
@@ -88,7 +92,7 @@
             // 
             // btn_Para
             // 
-            this.btn_Para.Location = new System.Drawing.Point(415, 4);
+            this.btn_Para.Location = new System.Drawing.Point(607, 4);
             this.btn_Para.Name = "btn_Para";
             this.btn_Para.Size = new System.Drawing.Size(153, 36);
             this.btn_Para.TabIndex = 8;
@@ -99,7 +103,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.cbox1);
-            this.panel2.Controls.Add(this.lbl3);
+            this.panel2.Controls.Add(this.lab_Eq);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -177,6 +181,7 @@
             // 
             // spCtn.Panel2
             // 
+            this.spCtn.Panel2.Controls.Add(this.panel3);
             this.spCtn.Panel2.Controls.Add(this.panel1);
             this.spCtn.Panel2.Controls.Add(this.btn_Err);
             this.spCtn.Panel2.Controls.Add(this.btn_Para);
@@ -232,13 +237,40 @@
             // 
             // btn_FCST
             // 
-            this.btn_FCST.Location = new System.Drawing.Point(598, 16);
+            this.btn_FCST.Location = new System.Drawing.Point(790, 16);
             this.btn_FCST.Name = "btn_FCST";
             this.btn_FCST.Size = new System.Drawing.Size(126, 60);
             this.btn_FCST.TabIndex = 1;
             this.btn_FCST.Text = "预测";
             this.btn_FCST.UseVisualStyleBackColor = true;
             this.btn_FCST.Click += new System.EventHandler(this.btn_FCST_Click);
+            // 
+            // cbox2
+            // 
+            this.cbox2.FormattingEnabled = true;
+            this.cbox2.Location = new System.Drawing.Point(22, 50);
+            this.cbox2.Name = "cbox2";
+            this.cbox2.Size = new System.Drawing.Size(121, 20);
+            this.cbox2.TabIndex = 1;
+            // 
+            // lab_Alg
+            // 
+            this.lab_Alg.AutoSize = true;
+            this.lab_Alg.Location = new System.Drawing.Point(20, 16);
+            this.lab_Alg.Name = "lab_Alg";
+            this.lab_Alg.Size = new System.Drawing.Size(65, 12);
+            this.lab_Alg.TabIndex = 0;
+            this.lab_Alg.Text = "算法选择：";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.cbox2);
+            this.panel3.Controls.Add(this.lab_Alg);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(386, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(151, 100);
+            this.panel3.TabIndex = 11;
             // 
             // Forecast
             // 
@@ -248,6 +280,7 @@
             this.Name = "Forecast";
             this.Size = new System.Drawing.Size(944, 457);
             this.Load += new System.EventHandler(this.Forecast_Load);
+            this.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.Forecast_ControlRemoved);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -260,6 +293,8 @@
             this.spCtn.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -268,7 +303,7 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ComboBox cbox1;
-        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lab_Eq;
         private System.Windows.Forms.Button btn_Err;
         private System.Windows.Forms.Button btn_Para;
         private System.Windows.Forms.Panel panel2;
@@ -284,5 +319,8 @@
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button btn_FCST;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox cbox2;
+        private System.Windows.Forms.Label lab_Alg;
     }
 }

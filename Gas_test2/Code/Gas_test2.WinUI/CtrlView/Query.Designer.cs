@@ -89,6 +89,7 @@
             this.CkListBox1.Name = "CkListBox1";
             this.CkListBox1.Size = new System.Drawing.Size(185, 103);
             this.CkListBox1.TabIndex = 3;
+            this.CkListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.CkListBox1_ItemCheck);
             // 
             // panel1
             // 

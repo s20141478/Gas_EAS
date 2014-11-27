@@ -46,11 +46,21 @@ namespace Gas_test2.WinUI.CtrlView
 
         private void Forecast_Load(object sender, EventArgs e)
         {
+            dataset.Clear();
             dataset = ServiceContainer.GetService<IGasDAL>().QueryTable("EquipTypeAbl");
-            string num = dataset.Tables[0].Rows[1].ToString();
-            for (int i = 0; i < int.Parse(num); i++)
+            DataView dvList = new DataView(dataset.Tables[0]);
+
+            foreach (DataRowView dv in dvList)
             {
-                cbox1.Items.Add(i + "#设备");
+
+                if (ModuleClass.FuncClass.ActivContrl[0].ToString() == dv["EquipName"].ToString())
+                {
+                    lab_Eq.Text = "选择" + dv["EquipName"].ToString() + "设备号";
+                    for (int i = 0; i < int.Parse(dv["EquipNum"].ToString()); i++)
+                    {
+                        cbox1.Items.Add(i + "#设备");
+                    }
+                }
             }
 
             SetSize();
@@ -59,21 +69,33 @@ namespace Gas_test2.WinUI.CtrlView
         private void btn_Para_Click(object sender, EventArgs e)
         {
             FormView.SetFCSTPara setpara = new FormView.SetFCSTPara();
-            setpara.Show();
+            setpara.ShowDialog();
             setpara.Dispose();
         }
 
         private void btn_Err_Click(object sender, EventArgs e)
         {
             FormView.ErrShow errshow = new FormView.ErrShow();
-            errshow.Show();
+            errshow.ShowDialog();
             errshow.Dispose();
         }
 
         private void btn_FCST_Click(object sender, EventArgs e)
         {
             /////BLL预测业务
+            var vService = ServiceContainer.GetService<IGasBLL>();
+            try
+            {
+                vService.Focast();
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show("预测出错：" + exc.Message);
+                return;
+            }
             /////Timer使用
+            timer1.Interval=60000;
+            timer1.Enabled = true;
             /////画图
             SetGragh(zg1);
         }
@@ -91,17 +113,36 @@ namespace Gas_test2.WinUI.CtrlView
             myPane.YAxis.Title.Text = "煤气量";// 纵坐标label
             //Set list
             PointPairList list = new PointPairList();
-            /*            List<HRGasReal> tempList = vList.ToList();
-            
-                        for (int i = 0; i < 100; i++)
-                        {
-                            double C = tempList[i].Consumption;
-                            DateTime T = tempList[i].Time;
 
-                            double x = Convert.ToDouble(i);
-                            double y = Convert.ToDouble(C);
-                            list.Add(x, y);
-                        }
+            dataset.Clear();
+            dataset = ServiceContainer.GetService<IGasDAL>().QueryTable(ModuleClass.FuncClass.ActivContrl[1].ToString() + cbox1.Text+cbox2.Text + "FCST");
+            DataView dvList = new DataView(dataset.Tables[0]);
+            foreach (DataRowView dv in dvList)
+            {
+                for (int i = 0; i < 100; i++)
+                {
+
+                    double x = Convert.ToDouble(dv["TIME"]);
+                    double y = Convert.ToDouble(dv["FFLOW"]);
+                    list.Add(x, y);
+                }
+
+            }
+            
+            
+          
+            /*            
+             List<HRGasReal> tempList = vList.ToList();
+            
+            for (int i = 0; i < 100; i++)
+            {
+                double C = tempList[i].Consumption;
+                DateTime T = tempList[i].Time;
+
+                double x = Convert.ToDouble(i);
+                double y = Convert.ToDouble(C);
+                list.Add(x, y);
+            }
             */
             /*//DateTime m = Convert.ToDateTime(DG1.Columns[1]);
             Double n = Convert.ToDouble( DG1.Columns[2]);
@@ -140,6 +181,11 @@ namespace Gas_test2.WinUI.CtrlView
             zg1.Location = new Point(10, 10);
             // Leave a small margin around the outside of the control
             zg1.Size = new Size(this.ClientRectangle.Width - 20, this.ClientRectangle.Height - 20);
+        }
+
+        private void Forecast_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            timer1.Enabled = false;
         }
 
 
