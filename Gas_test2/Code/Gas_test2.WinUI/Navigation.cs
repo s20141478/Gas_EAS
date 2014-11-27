@@ -33,6 +33,8 @@ namespace Gas_test2.WinUI
         #region UI属性
         public static int flag = 0;
         DataSet dataset = new DataSet();
+        List<List<string>> array = new List<List<string>>();
+
 
         #endregion
 
@@ -52,18 +54,30 @@ namespace Gas_test2.WinUI
         {
             //Menustripe修改
             dataset = ServiceContainer.GetService<IGasDAL>().QueryColumn("EquipName", "EquipTypeSlet");
+            
 
             //检查判断DataSet数据是否完整
             if (CheckData(dataset))
             {
-                //加载MenuStrip菜单
-                //ToolStripMenuItem topMenu = new ToolStripMenuItem();
+                //加载MenuStrip菜单              
                 LoadSubMenu(ref Menu_Query, "查询");
                 LoadSubMenu(ref Menu_Forecast, "预测");
+
             }
 
             //treeview
             GetMenu(treeView1, MainMenu1);
+
+            //loadlistName
+            DataView dvList = new DataView(dataset.Tables[0]);
+            foreach (DataRowView dv in dvList)
+            {
+               List<string> item = new List<string>(new string[] { dv["EquipName"].ToString(), dv["ETabName"].ToString() });
+               array.Add(item);
+
+
+            }
+
 
         }
 
@@ -86,7 +100,6 @@ namespace Gas_test2.WinUI
                 subMenu = new ToolStripMenuItem();
                 subMenu.Name = dv["EquipName"].ToString() + func;
                 subMenu.Text = dv["ETabName"].ToString();
-
                 subMenu.Tag = dv["ETabName"].ToString()+"_Click";
                 String str = " void " + dv["ETabName"].ToString();
                 //给菜单项加事件。
@@ -173,7 +186,7 @@ namespace Gas_test2.WinUI
         /// </summary>
         /// <param name="treeV">TreeView控件</param>
         /// <param name="MenuS">MenuStrip控件</param>
-        public void GetMenu(TreeView treeV, MenuStrip MenuS)
+        private void GetMenu(TreeView treeV, MenuStrip MenuS)
         {
             for (int i = 0; i < MenuS.Items.Count; i++) //遍历MenuStrip组件中的一级菜单项
             {
@@ -205,7 +218,7 @@ namespace Gas_test2.WinUI
         /// </summary>
         /// <param name="MenuS">MenuStrip控件</param>
         /// <param name="e">TreeView控件的TreeNodeMouseClickEventArgs类</param>
-        public void TreeMenuF(MenuStrip MenuS, TreeNodeMouseClickEventArgs e)
+        private void TreeMenuF(MenuStrip MenuS, TreeNodeMouseClickEventArgs e)
         {
             string Men = "";
             for (int i = 0; i < MenuS.Items.Count; i++) //遍历MenuStrip控件中主菜单项
@@ -245,67 +258,73 @@ namespace Gas_test2.WinUI
         /// </summary>
         /// <param name="FrmName">调用窗体的Text属性值</param>
         /// <param name="n">标识</param>
-        public void Show_Control(string FrmName, int n)
+        private void Show_Control(string FrmName, int n)
         {
-
-            if (n == 1)
+            panel1.Controls.Clear();
+            for(int i=0;i<array.Count;i++)
             {
-                if (FrmName == "烧结查询")  //判断要打开的窗体
+                if (FrmName == array[i][0]+"查询")  //判断要打开的窗体
                 {
                     CtrlView.Query FrmWordPad = new CtrlView.Query();
+                    ModuleClass.FuncClass.ActivContrl[0] = array[i][0];
+                    ModuleClass.FuncClass.ActivContrl[1] = array[i][1];
                     panel1.Controls.Add(FrmWordPad);
-                    flag = 1;
 
                 }
 
-            }
-            if (n == 2)
-            {
-                if (FrmName == "烧结预测")
+                    
+                if (FrmName == array[i][0]+"预测")
                 {
-                    CtrlView.Query FrmWordPad = new CtrlView.Query();
+                    CtrlView.Forecast FrmWordPad = new CtrlView.Forecast();
+                    ModuleClass.FuncClass.ActivContrl[0] = array[i][0];
+                    ModuleClass.FuncClass.ActivContrl[1] = array[i][1];
                     panel1.Controls.Add(FrmWordPad);
-                    flag = 11;
 
                 }
-
             }
+            
 
-            if (n == 0)
+            
+            if (FrmName == "备份/还原数据库")
             {
-                if (FrmName == "备份/还原数据库")
-                {
-                    FormView.HaveBack FrmHaveBack = new FormView.HaveBack();
-                    FrmHaveBack.Text = "备份/还原数据库";
-                    FrmHaveBack.ShowDialog();
-                    FrmHaveBack.Dispose();
-                }
-                if (FrmName == "清空数据库")
-                {
-                    FormView.ClearData FrmClearData = new FormView.ClearData();
-                    FrmClearData.Text = "清空数据库";
-                    FrmClearData.ShowDialog();
-                    FrmClearData.Dispose();
-                }
-
-
-                if (FrmName == "计算器")
-                {
-                    System.Diagnostics.Process.Start("calc.exe");
-                }
-                if (FrmName == "记事本")
-                {
-                    System.Diagnostics.Process.Start("notepad.exe");
-                }
-                if (FrmName == "帮助")
-                {
-                    System.Diagnostics.Process.Start("readme.doc");
-                }
+                FormView.HaveBack FrmHaveBack = new FormView.HaveBack();
+                FrmHaveBack.Text = "备份/还原数据库";
+                FrmHaveBack.ShowDialog();
+                FrmHaveBack.Dispose();
             }
+            if (FrmName == "清空数据库")
+            {
+                FormView.ClearData FrmClearData = new FormView.ClearData();
+                FrmClearData.Text = "清空数据库";
+                FrmClearData.ShowDialog();
+                FrmClearData.Dispose();
+            }
+
+
+            if (FrmName == "计算器")
+            {
+                System.Diagnostics.Process.Start("calc.exe");
+            }
+            if (FrmName == "记事本")
+            {
+                System.Diagnostics.Process.Start("notepad.exe");
+            }
+            if (FrmName == "帮助")
+            {
+                System.Diagnostics.Process.Start("readme.doc");
+            }
+            
 
 
         }
+               
         #endregion
+
+        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            
+            TreeMenuF(MainMenu1, e);   //用TreeMenuF()方法调用各控件
+        }
 
 
 

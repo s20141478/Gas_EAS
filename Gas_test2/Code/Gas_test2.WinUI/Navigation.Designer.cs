@@ -63,6 +63,7 @@
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(288, 433);
             this.treeView1.TabIndex = 6;
+            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -82,7 +83,7 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.记事本ToolStripMenuItem.Text = "记事本";
             // 
             // 常用工具ToolStripMenuItem
@@ -97,19 +98,19 @@
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.计算器ToolStripMenuItem.Text = "计算器";
             // 
             // 清空数据库ToolStripMenuItem
             // 
             this.清空数据库ToolStripMenuItem.Name = "清空数据库ToolStripMenuItem";
-            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.清空数据库ToolStripMenuItem.Text = "清空数据库";
             // 
             // 备份还原ToolStripMenuItem
             // 
             this.备份还原ToolStripMenuItem.Name = "备份还原ToolStripMenuItem";
-            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.备份还原ToolStripMenuItem.Text = "备份/还原";
             // 
             // 数据库工具ToolStripMenuItem

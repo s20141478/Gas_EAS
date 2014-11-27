@@ -8,10 +8,10 @@ using System.Data.SqlClient;
 
 namespace Gas_test2.WinUI.ModuleClass
 {
-    class FuncClass
+    public class FuncClass
     {
         #region UI属性
-
+        public static string[] ActivContrl=new string[2];
         #endregion
         
 
