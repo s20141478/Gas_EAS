@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.cbox1 = new System.Windows.Forms.ComboBox();
             this.lab_Eq = new System.Windows.Forms.Label();
             this.btn_Err = new System.Windows.Forms.Button();
@@ -41,15 +40,15 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tbCtrl = new System.Windows.Forms.TabControl();
             this.spCtn = new System.Windows.Forms.SplitContainer();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.cbox2 = new System.Windows.Forms.ComboBox();
+            this.lab_Alg = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.btn_FCST = new System.Windows.Forms.Button();
-            this.cbox2 = new System.Windows.Forms.ComboBox();
-            this.lab_Alg = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -59,8 +58,8 @@
             this.spCtn.Panel1.SuspendLayout();
             this.spCtn.Panel2.SuspendLayout();
             this.spCtn.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbox1
@@ -191,6 +190,33 @@
             this.spCtn.SplitterDistance = 353;
             this.spCtn.TabIndex = 4;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.cbox2);
+            this.panel3.Controls.Add(this.lab_Alg);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(386, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(151, 100);
+            this.panel3.TabIndex = 11;
+            // 
+            // cbox2
+            // 
+            this.cbox2.FormattingEnabled = true;
+            this.cbox2.Location = new System.Drawing.Point(22, 50);
+            this.cbox2.Name = "cbox2";
+            this.cbox2.Size = new System.Drawing.Size(121, 20);
+            this.cbox2.TabIndex = 1;
+            // 
+            // lab_Alg
+            // 
+            this.lab_Alg.AutoSize = true;
+            this.lab_Alg.Location = new System.Drawing.Point(20, 16);
+            this.lab_Alg.Name = "lab_Alg";
+            this.lab_Alg.Size = new System.Drawing.Size(65, 12);
+            this.lab_Alg.TabIndex = 0;
+            this.lab_Alg.Text = "算法选择：";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.textBox2);
@@ -245,33 +271,6 @@
             this.btn_FCST.UseVisualStyleBackColor = true;
             this.btn_FCST.Click += new System.EventHandler(this.btn_FCST_Click);
             // 
-            // cbox2
-            // 
-            this.cbox2.FormattingEnabled = true;
-            this.cbox2.Location = new System.Drawing.Point(22, 50);
-            this.cbox2.Name = "cbox2";
-            this.cbox2.Size = new System.Drawing.Size(121, 20);
-            this.cbox2.TabIndex = 1;
-            // 
-            // lab_Alg
-            // 
-            this.lab_Alg.AutoSize = true;
-            this.lab_Alg.Location = new System.Drawing.Point(20, 16);
-            this.lab_Alg.Name = "lab_Alg";
-            this.lab_Alg.Size = new System.Drawing.Size(65, 12);
-            this.lab_Alg.TabIndex = 0;
-            this.lab_Alg.Text = "算法选择：";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.cbox2);
-            this.panel3.Controls.Add(this.lab_Alg);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(386, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(151, 100);
-            this.panel3.TabIndex = 11;
-            // 
             // Forecast
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -291,17 +290,16 @@
             this.spCtn.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spCtn)).EndInit();
             this.spCtn.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ComboBox cbox1;
         private System.Windows.Forms.Label lab_Eq;
         private System.Windows.Forms.Button btn_Err;

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Globalization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Threading;
 
 using EAS.Data;
 using EAS.Data.ORM;
@@ -33,6 +34,8 @@ namespace Gas_test2.WinUI.CtrlView
     {
         private DataSet dataset = new DataSet();
         
+        System.Threading.Timer Thread_Time; 
+
         public Forecast()
         {
             InitializeComponent();
@@ -82,22 +85,10 @@ namespace Gas_test2.WinUI.CtrlView
 
         private void btn_FCST_Click(object sender, EventArgs e)
         {
-            /////BLL预测业务
-            var vService = ServiceContainer.GetService<IGasBLL>();
-            try
-            {
-                vService.Focast();
-            }
-            catch (System.Exception exc)
-            {
-                MessageBox.Show("预测出错：" + exc.Message);
-                return;
-            }
-            /////Timer使用
-            timer1.Interval=60000;
-            timer1.Enabled = true;
-            /////画图
-            SetGragh(zg1);
+            Thread_Time = new System.Threading.Timer(Thread_Timer_Method, null, 0, 20);
+            
+            //CallBLL();
+
         }
 
         /// <summary>
@@ -185,9 +176,48 @@ namespace Gas_test2.WinUI.CtrlView
 
         private void Forecast_ControlRemoved(object sender, ControlEventArgs e)
         {
-            timer1.Enabled = false;
+            Thread_Time.Dispose();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            CallBLL();
+        }
+
+        private void CallBLL()
+        {
+            /////BLL预测业务
+            var vService = ServiceContainer.GetService<IGasBLL>();
+            try
+            {
+                vService.Focast();
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show("预测出错：" + exc.Message);
+                return;
+            }
+            /////画图
+            SetGragh(zg1);
+        }
+
+        void Thread_Timer_Method(object o)
+        {
+
+            /////BLL预测业务
+            var vService = ServiceContainer.GetService<IGasBLL>();
+            try
+            {
+                vService.Focast();
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show("预测出错：" + exc.Message);
+                return;
+            }
+            /////画图
+            SetGragh(zg1);
+        } 
 
 
 
