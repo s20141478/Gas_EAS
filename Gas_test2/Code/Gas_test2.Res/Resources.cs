@@ -47,7 +47,7 @@ namespace Gas_test2.Res
         /// <returns></returns>
         public string GetApplicationTitle()
         {
-            return "药店管理信息系统";
+            return "能源预测调度系统";
         }
 
         public object GetMainShell()

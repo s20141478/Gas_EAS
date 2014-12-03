@@ -35,6 +35,10 @@
     <Reference Include="EAS.Data">
       <HintPath>..\..\Publish\EAS.Data.dll</HintPath>
     </Reference>
+    <Reference Include="EAS.Explorer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\code\Gas_test\Publish\EAS.Explorer.dll</HintPath>
+    </Reference>
     <Reference Include="EAS.MicroKernel">
       <HintPath>..\..\Publish\EAS.MicroKernel.dll</HintPath>
     </Reference>
@@ -77,6 +81,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gas_test2.Res\Gas_test2.Res.csproj">
+      <Project>{58c2458e-19b8-4149-b4a4-cd954f90d083}</Project>
+      <Name>Gas_test2.Res</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

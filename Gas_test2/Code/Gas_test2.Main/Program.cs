@@ -15,7 +15,11 @@ namespace Gas_test2.Main
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //1.启动升级。
             EAS.Windows.Application.Upgrade();
+            //2.启动平台。
+            EAS.WinClient.Application.ConfigResource(new Gas_test2.Res.Resources());
             EAS.WinClient.Application.Start();
         }
     }
