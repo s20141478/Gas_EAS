@@ -119,16 +119,16 @@ copy @RootDirectory\Publish\System.Workflow.ComponentModel.dll @RootDirectory\ap
 copy @RootDirectory\Publish\System.Workflow.Runtime.dll @RootDirectory\appserver\bin\System.Workflow.Runtime.dll /y
 copy @RootDirectory\Publish\WF.Demo.DAL.dll @RootDirectory\appserver\bin\WF.Demo.DAL.dll /y
 
-@rem DrugShop文件部署
-copy @RootDirectory\Publish\Northwind.Entities.dll @RootDirectory\appserver\xclient\files\Northwind.Entities.dll /y
-copy @RootDirectory\Publish\Northwind.BLL.Contracts.dll @RootDirectory\appserver\xclient\files\Northwind.BLL.Contracts.dll /y
-rem copy @RootDirectory\Publish\Northwind.Res.dll @RootDirectory\appserver\xclient\files\Northwind.Res.dll /y
-copy @RootDirectory\Publish\Northwind.Main.exe @RootDirectory\appserver\xclient\files\Northwind.Main.exe /y
-copy @RootDirectory\Publish\Northwind.Main.exe.config @RootDirectory\appserver\xclient\files\Northwind.Main.exe.config /y
+@rem Gas_test2文件部署
+copy @RootDirectory\Publish\Gas_test2.Entities.dll @RootDirectory\appserver\xclient\files\Gas_test2.Entities.dll /y
+copy @RootDirectory\Publish\Gas_test2.BLL.Contracts.dll @RootDirectory\appserver\xclient\files\Gas_test2.BLL.Contracts.dll /y
+copy @RootDirectory\Publish\Gas_test2.Res.dll @RootDirectory\appserver\xclient\files\Gas_test2.Res.dll /y
+copy @RootDirectory\Publish\Gas_test2.Main.exe @RootDirectory\appserver\xclient\files\Gas_test2.Main.exe /y
+copy @RootDirectory\Publish\Gas_test2.Main.exe.config @RootDirectory\appserver\xclient\files\Gas_test2.Main.exe.config /y
 
 @rem 复制到SOA服务Bin目录
-copy @RootDirectory\Publish\Northwind.Entities.dll @RootDirectory\appserver\bin\Northwind.Entities.dll /y
-copy @RootDirectory\Publish\Northwind.BLL.Contracts.dll @RootDirectory\appserver\bin\Northwind.BLL.Contracts.dll /y
-copy @RootDirectory\Publish\Northwind.BLL.Host.dll @RootDirectory\appserver\bin\Northwind.BLL.Host.dll /y
+copy @RootDirectory\Publish\Gas_test2.Entities.dll @RootDirectory\appserver\bin\Gas_test2.Entities.dll /y
+copy @RootDirectory\Publish\Gas_test2.BLL.Contracts.dll @RootDirectory\appserver\bin\Gas_test2.BLL.Contracts.dll /y
+copy @RootDirectory\Publish\Gas_test2.BLL.Host.dll @RootDirectory\appserver\bin\Gas_test2.BLL.Host.dll /y
 
 pause

@@ -129,14 +129,14 @@
             this.gbox3.Size = new System.Drawing.Size(477, 454);
             this.gbox3.TabIndex = 6;
             this.gbox3.TabStop = false;
-            this.gbox3.Text = "算法项配置";
+            this.gbox3.Text = "算法项配置：";
             // 
             // cbox_Eq
             // 
             this.cbox_Eq.FormattingEnabled = true;
             this.cbox_Eq.Location = new System.Drawing.Point(33, 31);
             this.cbox_Eq.Name = "cbox_Eq";
-            this.cbox_Eq.Size = new System.Drawing.Size(177, 20);
+            this.cbox_Eq.Size = new System.Drawing.Size(193, 20);
             this.cbox_Eq.TabIndex = 0;
             // 
             // lbox_Factor
