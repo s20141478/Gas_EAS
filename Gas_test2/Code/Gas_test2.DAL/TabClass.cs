@@ -15,21 +15,26 @@ namespace Gas_test2.DAL
 
         #region 创建，删除，修改
 
-        // 创建一个有两个字段的数据表
-        public DataSet CreateTable(string tableName,string colum_name1,string colum_name2,string datatype1,string datatype2 )
+        // 创建一个有五个字段的数据表
+        public DataSet CreateTable1(string tableName, string colum_name1, string colum_name2, string colum_name3, string colum_name4, string colum_name5, string datatype1, string datatype2, string datatype3, string datatype4, string datatype5)
         {
-            DataSet returndataset = baseClass.getDataSet("create table " + tableName + "(" + colum_name1 + datatype1 + "," + colum_name2 + datatype2  + ")" + ";", tableName);
+            DataSet returndataset = baseClass.getDataSet("create table " + tableName + "(" + colum_name1 + datatype1 + "primary key" + "," + colum_name2 + datatype2 + "," + colum_name3 + datatype3 + colum_name4 + datatype4 + "," + colum_name5 + datatype5 + ")" + ";", tableName);
             return returndataset;
         }
 
-        //在其他文件组上创建两个字段的数据表
-        public DataSet CreateTable(string tableName, string colum_name1, string colum_name2, string file_name,string datatype1,string datatype2)
+        // 创建一个有四个字段的数据表
+        public DataSet CreateTable1(string tableName, string colum_name1, string colum_name2, string colum_name3, string colum_name4, string datatype1, string datatype2, string datatype3, string datatype4)
         {
-            DataSet returndataset = baseClass.getDataSet("create table " + tableName + "(" + colum_name1 + datatype1 + "," + colum_name2 + datatype2 + ")" + "on" + file_name + ";", tableName);
+            DataSet returndataset = baseClass.getDataSet("create table " + tableName + "(" + colum_name1 + datatype1 + "primary key" + "," + colum_name2 + datatype2 + "," + colum_name3 + datatype3 + colum_name4 + datatype4 + ")" + ";", tableName);
             return returndataset;
         }
 
-   
+        // 创建一个有七个字段的数据表
+        public DataSet CreateTable1(string tableName, string colum_name1, string colum_name2, string colum_name3, string colum_name4, string colum_name5,string colum_name6, string colum_name7, string datatype1, string datatype2, string datatype3, string datatype4, string datatype5, string datatype6, string datatype7)
+        {
+            DataSet returndataset = baseClass.getDataSet("create table " + tableName + "(" + colum_name1 + datatype1 + "primary key" + "," + colum_name2 + datatype2 + "," + colum_name3 + datatype3 + colum_name4 + datatype4 + "," + colum_name5 + datatype5 + colum_name6 + datatype6 + "," + colum_name7 + datatype7 + ")" + ";", tableName);
+            return returndataset;
+        }
 
         //更改数据表中一列的数据类型     
         public DataSet UpdateTable(string tableName, string column_name1,string datatype)
